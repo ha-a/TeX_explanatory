@@ -1,0 +1,34 @@
+% +++
+% sequence = ["latex", "bibtex", "latex", "latex"]
+% [programs.latex]
+% 	command = "lualatex"
+% 	opts = ["-synctex=1", "-file-line-error", "-interaction=nonstopmode"]
+% 	args = ["%S"]
+% [programs.bibtex]
+% 	command = "upbibtex"
+% 	target = "../ref.bib"
+% 	args = ["%B"]
+% +++
+
+\documentclass[./main]{subfiles}
+\graphicspath{{\subfix{./figures/section5/}}}
+\setcounter{section}{4}
+
+\begin{document}
+\section{ちょっとしたTips}
+\addtocontents{lof}{\protect\addvspace{1em}}
+\noindent
+ここまでで，基本的な\TeX の実行について幾分イメージがつきやすくなったと思う．
+これより先は「へえ、そうだったのか」と個人的に思ったような\TeX 周りの何事か（学会原稿周辺のルールなども含む）を完全に備忘録として記していく．
+
+\subsection{\LuaLaTeX でなんとやら}
+\subsubsection{フォント}
+本資料でもフォントの調整は行っている．
+このように途中で変えるのもお手の物である．
+
+
+\ifSubfilesClassLoaded{%
+  \printbibliography
+}% 
+
+\end{document}

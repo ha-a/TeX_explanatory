@@ -1,0 +1,61 @@
+% +++
+% sequence = ["latex", "bibtex", "latex", "latex"]
+% [programs.latex]
+% 	command = "lualatex"
+% 	opts = ["-synctex=1", "-file-line-error", "-interaction=nonstopmode"]
+% 	args = ["%S"]
+% [programs.bibtex]
+% 	command = "upbibtex"
+% 	target = "../ref.bib"
+% 	args = ["%B"]
+% +++
+
+\documentclass[./main]{subfiles}
+
+\begin{document}
+\appendix
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\makeatletter
+	\renewcommand{\theequation}{\thesubsection.\arabic{equation}}
+	\@addtoreset{equation}{subsection}
+	\renewcommand{\thefigure}{\thesubsection.\arabic{figure}}
+	\@addtoreset{figure}{subsection}
+	\renewcommand{\thetable}{\thesubsection.\arabic{table}}
+	\@addtoreset{table}{subsection}
+\makeatother
+
+\setcounter{equation}{0}
+
+%\renewcommand{\thesubsection}{\Alph{subsection}}
+\section*{\appendixname}
+\addcontentsline{toc}{section}{\appendixname}
+\addtocontents{lof}{\protect\addvspace{1em}}
+\addtocontents{lot}{\protect\addvspace{1em}}
+
+\markboth{\appendixname}{}
+
+\subsection{ぼくがかんがえたさいきょうのてふかんきょう}
+\noindent
+タイトルのとおりである．
+僕の考える最強であって，実際の最強ではないし，日々ぼくのなかのさいきょうはこうしんされつづける！
+さらに言えば，ここは特に丁寧に説明する気もないので，個別の環境や目的ごとに場合分けをしていない．
+書いてあることをそのままコピペではなく，慎重に行うことをすすめる．
+
+\subsubsection{distribution}
+\begin{itemize}
+  \item Windows: 知らない
+  \item MacOS: Homebrew を使う．知らない人は知らない．\TeX Shopとかはいらないからついてない方．
+\end{itemize}
+\subsubsection{確認と準備}
+\TeX のインストールが上手く行かない話はよくあるが，最後までやってから何かでテストしようとするのが良くないと思う．
+当たり前だがこの時点でコンパイルはできるのでとりあえずやってみるべし．
+\subsubsection{latexmkrc}
+本来的には，文書ごとにどの\LaTeX を使っているか意識するのがよいのだが，取りあえず何でも使えるやつをつくる．
+
+ここでも一応\verb|latexmk|が思い通りに動くか確認しておこう．
+\subsubsection{Visual Studio Code (LaTeX Workshop)}
+
+
+
+\end{document}

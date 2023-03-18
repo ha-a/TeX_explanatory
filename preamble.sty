@@ -1,0 +1,344 @@
+\usepackage{comment}
+
+%%%%%%%%%%%%%%
+% TITLE PAGE %
+%%%%%%%%%%%%%%
+
+\usepackage{ifthen}
+
+\makeatletter
+
+\def\conference#1{\def\@thesis{#1}}
+\def\id#1{\def\@id{#1}}
+\def\department#1{\def\@department{#1}}
+\def\entitle#1{\def\@entitle{#1}}
+
+\def\@maketitle{
+  \vbox{}\vfill%\vspace{40mm}
+
+  \begin{center}
+    \ifthenelse{\isundefined{\@conference}}{}{\LARGE \@conference \par}
+      \vspace{8mm}
+    {\huge \@title \par}
+      \vspace{2mm}
+    \ifthenelse{\isundefined{\@entitle}}{}{\Large \@entitle \par}
+      \vspace{15mm}
+    {\Large \@date\par}
+      \vspace{10mm}
+    \ifthenelse{\isundefined{\@department}}{}{\large \@department \par}
+      \vspace{5mm}
+      \ifthenelse{\isundefined{\@id}}{}{\large 学籍番号 \@id\hspace{1cm}}{\LARGE \@author}
+  \end{center}
+
+  \vbox{}\vfill
+}
+
+\makeatother
+
+%%%%%%%%%%%%%%%%%
+% MARGIN & PAGE %
+%%%%%%%%%%%%%%%%%
+
+\usepackage{geometry}
+\geometry{
+    % ignoreall,
+    includeall,
+    width  = 0.8\paperwidth,
+    height = 0.8\paperheight,
+    marginparsep = 0pt,
+    marginparwidth = 0pt,
+    headsep = 0.05\paperheight,
+    footskip = 0.07\paperheight,
+    heightrounded,% better use it
+}
+
+\usepackage{fancyhdr}
+
+\usepackage{extramarks}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection.\ #1}{\thesection.\ #1}\extramarks{}{\thesection.\ #1}}
+\renewcommand{\subsectionmark}[1]{\extramarks{}{\thesubsection.\ #1}}
+
+\setlength{\headheight}{16.0pt}
+\pagestyle{fancy}
+\fancyhf{}
+
+\makeatletter
+\if@twoside%
+    % twoside = true
+    \fancyhead[LE]{\firstleftmark}
+    \fancyhead[RO]{\lastxmark}
+    \fancyfoot[LE,RO]{\thepage}
+    \fancyfoot[LO,RE]{\ibm{built at \DTMcurrenttime~by \myWorkflowName{}}}
+    \fancypagestyle{toc}{
+        \fancyhead{}
+        \fancyfoot[LE,RO]{\thepage}
+        \fancyfoot[RE,LO]{}
+        \renewcommand{\headrulewidth}{0pt}
+    } 
+\else%
+    % twoside = false
+    \lhead{\firstleftmark}
+    \rhead{\lastxmark}
+    \cfoot{\thepage}
+    \fancypagestyle{toc}{
+        \rhead{}
+        \lhead{}
+        \cfoot{\thepage}
+        \renewcommand{\headrulewidth}{0pt}
+    } 
+\fi%  
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%
+% FONTS         %
+%%%%%%%%%%%%%%%%%
+\setmainfont[Ligatures=TeX]{TeX Gyre Termes}
+\setsansfont{Verdana}
+\setmonofont{NewComputerModernMono10-Book}
+\usepackage[no-math,deluxe,expert,hiragino-pron]{luatexja-preset}
+\setmainjfont[BoldFont=HiraMinPro-W6]{HiraMinPro-W3}
+\setsansjfont[BoldFont=Hiragino Kaku Gothic Pro W6]{Hiragino Kaku Gothic Pro W3}
+\newfontfamily{\secE}{American Typewriter}
+\newjfontfamily{\secJ}{Hiragino Kaku Gothic Pro W6}
+\newfontfamily{\ibm}{3270 Narrow}
+
+%%%%%%%%%%%%%%%%%
+% CONTENTS NAME %
+%%%%%%%%%%%%%%%%%
+
+\usepackage{titlesec}
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\listfigurename}{List of Figures}
+\renewcommand{\listtablename}{List of Tables}
+\renewcommand{\figurename}{Fig.~}
+\renewcommand{\tablename}{Table~}
+\renewcommand{\refname}{References}
+\renewcommand{\appendixname}{付録}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{(\arabic{subsubsection})}
+
+
+%%%%%%%%%%%%%%%%%
+% SECTION STYLE %
+%%%%%%%%%%%%%%%%%
+
+\titleformat{\section} % command
+  [hang]               % shape
+  {\secE\secJ\LARGE}    % format
+  {\thesection.}       % label
+  {0.5em}              % sep
+  {}                   % before-code
+ 
+\titleformat{\subsection} % command
+  [hang]                  % shape
+  {\secE\secJ\Large}       % format
+  {\thesubsection.}       % label
+  {0.5em}                 % sep
+  {}                      % before-code
+
+\titleformat{\subsubsection} % command
+  [hang]                     % shape
+  {\secJ\bfseries\large}          % format
+  {\thesubsubsection}        % label
+  {0.5em}                    % sep
+  {}                         % before-code
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% TABLE OF CONTENTS %
+%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{tocdepth}{3}
+
+\usepackage{tocloft}
+% \renewcommand{\cftdot}{$\ast$}
+\renewcommand{\cftsecfont}{\normalsize}      % 見出しフォント
+\renewcommand{\cftsecpagefont}{\normalsize}  % ページ番号フォント
+\renewcommand{\cftsecpresnum}{}              % 見出し番号前
+\renewcommand{\cftsecaftersnum}{.}           % 見出し番号後
+\cftpagenumbersoff{subsection}               % ページ番号を表示しない
+\renewcommand{\cftsubsecaftersnum}{.}
+\cftpagenumbersoff{subsubsection}
+\renewcommand{\cftsubsubsecpresnum}{}
+\renewcommand{\cftsubsubsecaftersnum}{}
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}  % 見出し....ページ番号
+\renewcommand{\cftdotsep}{1}                              % 点線の点間の調整
+\renewcommand{\cftsecdotsep}{\cftdotsep}
+\setlength{\cftbeforesecskip}{2.5pt}                      % 見出し上の余白調整
+
+\cftsetindents{section}{0em}{1.25em}
+\cftsetindents{subsection}{1.5em}{2em}
+\cftsetindents{subsubsection}{3em}{1.5em}
+
+% LIST OF FIGURES
+\cftpagenumbersoff{figure}
+\renewcommand{\cftfigpresnum}{\figurename}  % 図番号の前
+\renewcommand{\cftfigaftersnum}{.}          % 図番号の後
+\renewcommand{\cftfignumwidth}{4em}         % 図見出しインデント
+% 段組み
+\RequirePackage{multicol}
+\setlength{\columnsep}{-10pt}
+\renewcommand\cftlofprehook{\begin{multicols}{2}\setlength{\columnseprule}{.4pt}}
+\renewcommand\cftlofposthook{\end{multicols}}
+
+% LIST OF TABLES
+\cftpagenumbersoff{table}
+\renewcommand{\cfttabpresnum}{\tablename}   % 表番号の前
+\renewcommand{\cfttabaftersnum}{.}       % 表番号の後
+\renewcommand{\cfttabnumwidth}{4em}   % 表見出しインデント
+
+\RequirePackage{multicol}
+\setlength{\columnsep}{-10pt}
+\renewcommand\cftlotprehook{\begin{multicols}{2}\setlength{\columnseprule}{.4pt}}
+\renewcommand\cftlotposthook{\end{multicols}}
+
+%%%%%%%%%%%
+% FIGURES %
+%%%%%%%%%%% 
+
+\usepackage{graphicx}
+
+% CAPTION
+\makeatletter
+  \newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}}
+  %\newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}}
+  \usepackage{xifthen}
+  \newcommand{\tblcaption}[2][]{%
+    \def\@captype{table}%
+    \ifthenelse{\equal{#1}{}}{\caption{#2}}{\caption[#1]{#2}}
+  }
+\makeatother
+
+\usepackage[list=true,labelformat=parens,subrefformat=simple]{subcaption}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+\DeclareCaptionLabelFormat{opening}{#2}
+\captionsetup[figure]{
+  format=hang,
+  labelsep=period,
+  font=small,
+  %justification=RaggedRight,
+  singlelinecheck=1,
+}
+\captionsetup[table]{
+  format=hang,
+  labelsep=period,
+  %justification=RaggedRight,
+  singlelinecheck=1,
+}
+\captionsetup[subfigure]{
+  labelformat=opening,
+  format=hang, 
+  justification=raggedright,
+  singlelinecheck=0,
+}
+
+% 
+\newcommand{\figref}[1]{\figurename\ref{#1}}
+\newcommand{\tblref}[1]{\tablename\ref{#1}}
+
+
+%%%%%%%%%%%%%
+% NUMBERING %
+%%%%%%%%%%%%%
+
+\makeatletter
+  \renewcommand{\theequation}{\thesection.\arabic{equation}} 
+  \@addtoreset{equation}{section}
+
+  \renewcommand{\thefigure}{\thesection.\arabic{figure}}
+  \@addtoreset{figure}{section}
+
+  \renewcommand{\thetable}{\thesection.\arabic{table}}
+  \@addtoreset{table}{section}
+\makeatother
+
+
+%%%%%%%%%%%%%%%
+% MATHEMATICS %
+%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{array}
+\usepackage{mathtools} % \coloneqq
+
+% 数式モードの行間
+\setlength{\jot}{10pt}
+
+\newenvironment{subeq}{%
+  \subequations\renewcommand{\theequation}{\theparentequation\,\alph{equation}}
+}{%
+  \endsubequations
+}
+
+\newcommand{\diff}{\mathrm{d}}
+
+
+%%%%%%%%%%%%%
+% FUNCTIONS %
+%%%%%%%%%%%%%
+
+\newcommand{\alert}[1]{\textcolor{red}{\textbf{(#1)}}}
+\newcommand{\pgref}[1]{\pageref{#1}ページ}
+% \usepackage{newclude}
+\usepackage{subfiles}
+
+\usepackage{ascmac} % screen, itembox, shadebox
+\usepackage{color}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent}
+
+
+
+%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\labelenumi}{\roman{enumi}.}
+\renewcommand{\labelitemi}{$\circ$}
+
+\newcommand{\circtext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}}
+
+\newcommand{\capt}[3][\hsize-5em]{%
+  \def\@captype{figure}%
+  \caption[#2]{
+    \begin{minipage}[t]{#1}
+      \textbf{#2}\\
+      #3
+    \end{minipage}
+  }
+}
+
+\usepackage[pdfusetitle]{hyperref}
+\hypersetup{
+  unicode,
+  luatex,
+  pdfencoding=auto,
+  bookmarksnumbered=true,
+  colorlinks=false,
+  linkbordercolor={0 0 1},
+  hidelinks,
+}
+
+
+%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY %
+%%%%%%%%%%%%%%%%
+% 何故かバグるのでここに置く
+
+% \usepackage[numbers,sort&compress]{natbib}
+\renewcommand{\refname}{参考文献}
+% \bibliographystyle{unsrtnat}
+
+
+\newcommand{\bhline}[1]{\noalign{\hrule height #1}}   
+
+

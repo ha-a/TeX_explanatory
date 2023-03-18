@@ -1,0 +1,82 @@
+% +++
+% sequence = ["latex", "bibtex", "latex", "latex"]
+% [programs.latex]
+% 	command = "lualatex"
+% 	opts = ["-synctex=1", "-file-line-error", "-interaction=nonstopmode"]
+% 	args = ["%S"]
+% [programs.bibtex]
+% 	command = "upbibtex"
+% 	target = "../ref.bib"
+% 	args = ["%B"]
+% +++
+
+\documentclass[./main]{subfiles}
+\graphicspath{{\subfix{./figures/section4/}}}
+\setcounter{section}{3}
+
+\begin{document}
+\section{結局なにをどうするのか}
+\addtocontents{lof}{\protect\addvspace{1em}}
+\noindent
+ここまでで，\TeX があって，その拡張としていくつか種類があり，\TeX たちを楽に使うための\LaTeX も何種類か存在することがわかった．
+説明はしていないが，文書には文書クラスというものがあり（\verb|jsarticle|とか\verb|jsbook|とか），適宜選ばなくてはならない．
+文献管理の方法も一つではなく，コンパイルを自動化してくれるツールも一つシェア率が高いものがあるとは言え，他にも選択肢がある．
+もはや説明していないが，エディタも何種類も存在する．
+もちろん，日本語を扱えないものや明らかに目的が違うものなどもあるため，その中から選択していく必要はあるが，それでも選択肢が何個もあるのは確かである．
+では我々はなにを選択するべきなのか．
+
+\begin{itembox}{結論}
+  \centering
+  \LuaLaTeX\ $+$ \upBibTeX\,(or Bib\LaTeX) $+$ \verb|latexmk| 
+\end{itembox}
+これは結局カスタマイズ性を優先している方法である．
+その中で個人的には一番「特別なにも考えなくてもいいレシピ」である．
+\LuaLaTeX を使う理由としては
+\begin{itemize}
+  \item Unicodeに対応しているので，出力できない文字を気にしなくて良い．
+  \item \verb|dvi|ファイルという\TeX 固有のよくわからないものを生成する必要もない．
+\end{itemize}
+などが挙げられるが，さらにもう少し\TeX を自在に扱いたいと思ったとして
+\begin{itemize}
+  \item OpenType対応なので，フォントの設定が楽
+  \item 扱いが難しいとされる原始的な\TeX 言語を扱わなくてもLuaによって柔軟なカスタマイズが可能．
+\end{itemize}
+などもメリットであろう\supercite{JPLaTeX_Yato}．
+一方で，デメリットとして\LuaLaTeX は処理が遅いことが挙げられるが，以前は20倍程度遅かったところ，最近では2倍程度に抑えられており\supercite{LuaTeX_notslow}，今後さらに速くなっていくと考えられる．
+
+逆に(u)\pLaTeX を使わない理由としては，欧文と和文でフォントの扱いが違うためにせっかくの文書が美しくならなかったり，近いうちにまともに動かなくなるなんて話もあったり\supercite{pLaTeX_danger}\footnote{おそらく，結局誰かがどうにかして実際に使えなくなることはないのだろうが，それでもそのようなリスクを抱えるものをわざわざ使う理由は特にない．}するからである．
+
+一方で\upBibTeX を用いるのは簡単に
+\begin{itemize}
+  \item 学会であれば基本的に参考文献のフォーマットは決まっている（\verb|bst|ファイルが配布される）．
+  \item 自分で参考文献のところを必要以上に凝りたいと思うことが少ない．
+\end{itemize}
+ために，比較的処理の遅いBib\LaTeX を用いる必要性を感じないからである．
+しかし，せっかくなら細かいところまで気にしたい，のであればBib\LaTeX を用いるのもよいだろう．
+
+先に述べたコンパイルの煩雑さを回避するためにも自動化は必要不可欠であり，結局広く使われている\verb|latexmk|をここではおすすめしている．
+というのも
+\begin{itemize}
+  \item 広く使われているからこそ，使い方などの情報が豊富に見つかる．
+  \item Visual Studio Codeなどで公式にサポートされている\footnote{実はVScode上でのエラーや警告の拾い方はlatexmkだけ特別扱いされる\supercite{llmk_Workshop}．}．
+  \item 一度設定ファイル\verb|latexmkrc|を作ってしまえば，なにも考えずにその後使いまわすこともできる．
+\end{itemize}
+からである．
+
+一方で，もしコンパイルの速さを優先するなら，
+\begin{screen}
+  \centering
+  \upLaTeX\ $+$ \upBibTeX\ $+$ \verb|dvipdfmx| ($+$ \verb|latexmk|)
+\end{screen}
+なども考えられよう．
+この場合，いつでも使える\verb|latexmk|で自動化せずに，必要な回数コンパイルするレシピを作って処理するのがより速いだろう．
+例えばただの授業の課題など，体裁にこだわる必要のない，たかだか数ページのものを作るのならコンパイルの速度を優先するのがいい．
+ただ，どうせコンパイル中も編集は行えることを加味すれば\LuaLaTeX を利用するのがいいように思える．
+
+「ぼくがかんがえたさいきょうのてふかんきょう」を巻末に記す（予定な）ので，参考にしてほしい．
+
+\ifSubfilesClassLoaded{%
+  \printbibliography
+}% 
+
+\end{document}
