@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.9)  19 MAR 2023 06:01
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.9)  19 MAR 2023 06:55
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/hbk-asakr/Folders/tmp/TeX_explanatory/source/main.tex
@@ -2179,17 +2179,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  37279 strings out of 478290
- 244635,1977958 words of node,token memory allocated
+ 244637,1977958 words of node,token memory allocated
  2779 words of node memory still in use:
    11 hlist, 2 vlist, 5 rule, 16 glue, 4 kern, 1 glyph, 766 attribute, 117 glue_spec, 82 attribute_list, 1 write, 14 user_defined, 12 pdf_action nodes
-   avail lists: 1:42,2:59745,3:653,4:3636,5:1089,6:116,7:6337,8:147,9:4453,10:35,11:198
+   avail lists: 1:42,2:59793,3:653,4:3636,5:1089,6:116,7:6343,8:147,9:4453,10:35,11:200
  55778 multiletter control sequences out of 65536+600000
  235 fonts using 257183839 bytes
  123i,14n,141p,1825b,2008s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
 </System/Library/Fonts/ヒラギノ角ゴシック W3.ttc></System/Library/Fonts/ヒラギノ角ゴシック W3.ttc></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-italic.otf></System/Library/Fonts/ヒラギノ角ゴシック W6.ttc></System/Library/Fonts/ヒラギノ角ゴシック W6.ttc></System/Library/Fonts/Supplemental/AmericanTypewriter.ttc></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/newcomputermodern/NewCMMono10-Book.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-bold.otf></System/Library/Fonts/Supplemental/Verdana.ttf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-regular.otf></Users/hbk-asakr/Library/Fonts/3270Narrow.ttf></System/Library/Fonts/ヒラギノ明朝 ProN.ttc></System/Library/Fonts/ヒラギノ明朝 ProN.ttc></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tipa/tipa10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tipa/tipa8.pfb>
-Output written on main.pdf (20 pages, 669640 bytes).
+Output written on main.pdf (20 pages, 669738 bytes).
 
 PDF statistics: 665 PDF objects out of 1000 (max. 8388607)
  521 compressed objects within 6 object streams
