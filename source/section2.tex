@@ -26,7 +26,7 @@
 
 ところで，\TeX は\TeX であり，\verb|tex|でも\verb|TEX|でもなければ\verb|Tex|でもない．
 しかし，場合によってTeXと表記されることはある．
-また，本資料では拡張子が \verb|*.tex|となっているものについては\verb|tex|と表記することにする．
+また，本資料では拡張子が \verb|*.tex|となっているものについては\verb|tex|ファイルなどと表記することにする．
 \LaTeX も同様で，\LaTeX かもしくはLaTeXである．
 ちなみに，\TeX の発音はアルファベットのX \textipa{/\textepsilon ks/}として読むのではなく，無声軟口蓋摩擦音\textipa{/x/}と発音するのが正しい（諸説あるが）\footnote{
   日本語で表記するなら「てふ」であり，歴史的仮名遣い的にその発音は\textipa{/t\textesh o\textlengthmark/}である．
@@ -37,7 +37,7 @@
 \TeX とは1978年に Donald E. Knuth\supercite{KnuthHP} が発表した``組版\footnote{原稿及びレイアウトの指定に従って，文字・図版・写真などを配置する作業の総称\supercite{Typesetting_Wikipedia}．}ソフトウェアと組版言語''である\supercite{reutenauer2008brief}．
 つまり，``文章そのもの''と``文章の構造を指定する命令''が書かれたテキストファイル（この命令を記す言語も\TeX という）を読み込み，その命令に従って文章を組版するソフトウェアが\TeX である．
 組版結果はDVI形式 (DeVice-Independent) に書き出されるが，この\verb|dvi|ファイルは文書の見た目のレイアウト（紙面のどの位置にどの文字を配置する，などの情報）を画像形式・表示デバイス・プリンタにまったく依存しない形で記録している\supercite{TeXdiff_wtsnjp}．
-\TeX をとてもざっくりまとめると（Knuthの思う）美しい組版がデバイスによらず出力される，ということになろう．
+結局\TeX をとてもざっくりまとめると（Knuthの思う）美しい組版がデバイスによらず出力される，ということになろう．
 
 \subsection{\LaTeX とはなにか}
 \noindent
@@ -104,7 +104,7 @@
   \item \ConTeXt : 文書の体裁もユーザー自身によってすべて調整可能とすることを目標としているマクロ体系\supercite{ConTeXt_TeXWiki}．
   外部パッケージなしであらゆる部分の調整が可能となるようになっているため，\LaTeX で起こるようなパッケージ同士の衝突などはおこらない．
   \figref{fig:ConTeXt_test}に\ConTeXt を使った\verb|tex|ファイルの例とその出力\verb|pdf|ファイルを示す．
-  左のコードの中で赤く示した命令の間が本文であり，その前がいわゆるプリアンブルである．
+  左のコードの中で赤く示した命令(\verb|\starttext|と\verb|stoptext|)の間が本文であり，その前がいわゆるプリアンブルである．
   比較的単純な出力に対し，パッケージ等を用いず，すべての設定をユーザー自身が行う必要があり，プリアンブルが長くなっている印象である．
 \end{itemize}
 \begin{figure}[tbph]
