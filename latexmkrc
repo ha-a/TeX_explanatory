@@ -1,3 +1,5 @@
+#!/usr/bin/env perl
+
 # $latex     = 'uplatex  %O -synctex=1 -file-line-error -interaction=nonstopmode %S';
 # $pdflatex  = 'pdflatex %O -synctex=1 -file-line-error -interaction=nonstopmode %S';
 $lualatex  = 'lualatex %O -synctex=1 -file-line-error -halt-on-error %S';

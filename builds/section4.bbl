@@ -1,0 +1,89 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{JPLaTeX_Yato}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{「日本語LaTeX」が多すぎる件について}}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.slideshare.net/zr-tex8r/latex-239371115
+      \endverb
+      \verb{url}
+      \verb https://www.slideshare.net/zr-tex8r/latex-239371115
+      \endverb
+    \endentry
+    \entry{LuaTeX_notslow}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{{LuaTeXが実はそんなに遅くないかも知れない件 - マクロツイーター}}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://zrbabbler.hatenablog.com/entry/20170730/1501402087
+      \endverb
+      \verb{url}
+      \verb https://zrbabbler.hatenablog.com/entry/20170730/1501402087
+      \endverb
+    \endentry
+    \entry{pLaTeX_danger}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{pLaTeXが本格的にやばいかもという話 - Acetaminophen's diary}}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://acetaminophen.hatenablog.com/entry/2021/06/18/022108
+      \endverb
+      \verb{url}
+      \verb https://acetaminophen.hatenablog.com/entry/2021/06/18/022108
+      \endverb
+    \endentry
+    \entry{llmk_Workshop}{online}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{{LaTeX Workshopでllmkしてみたらアレだった件}}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://zrbabbler.hatenablog.com/entry/2020/09/23/190840
+      \endverb
+      \verb{url}
+      \verb https://zrbabbler.hatenablog.com/entry/2020/09/23/190840
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

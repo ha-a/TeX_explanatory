@@ -1,0 +1,64 @@
+\documentclass{standalone}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\usepackage{luacode}
+
+\begin{luacode*}
+  function my_repeat(n, txt)
+    for i = 1, n do
+      tex.sprint(txt)
+    end
+  end
+
+  function my_displace(str_before, str_after, sentence)
+    local sentence_after = ""
+    local l = #str_before - 1
+    local i = 0
+    while true do
+      if string.sub(sentence, i, i+l) == str_before then
+        sentence_after = sentence_after .. str_after
+        i = i + l
+      else
+        sentence_after = sentence_after .. string.sub(sentence, i, i)
+      end
+      -- tex.sprint(i..",")
+      i = i + 1
+      if i > #sentence - l then
+        break
+      end
+    end
+    tex.sprint(sentence_after)
+  end
+
+\end{luacode*}
+
+\newcommand{\displace}[3]{
+  \directlua{ my_displace("#1","#2","#3") }%
+}
+
+
+
+\newcommand{\myRepeat}[2]{% #1=<n>, #2=<テキスト>
+  \directlua{ my_repeat(#1, "#2") }%
+}
+
+\newcommand{\sumSquare}[2]{%
+  \directlua{
+    function sum_square(x,y)
+      local s = 0
+      for i = x, y do
+        s = s + i^2
+      end
+      tex.sprint(math.floor(s))
+    end
+  }
+  \directlua{ sum_square(#1,#2) }%
+}
+
+\begin{document}
+  % \myRepeat{5}{duck}
+  \displace{duck}{cat}{\displace{duck}{duckduck}{duckduck duck}}
+
+  \sumSquare{1}{3}
+\end{document}

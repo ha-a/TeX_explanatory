@@ -1,0 +1,308 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{KnuthHP}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Don Knuth's home page}}
+      \field{urlday}{26}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www-cs-faculty.stanford.edu/~knuth/
+      \endverb
+      \verb{url}
+      \verb https://www-cs-faculty.stanford.edu/~knuth/
+      \endverb
+    \endentry
+    \entry{Typesetting_Wikipedia}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{{組版 - Wikipedia}}
+      \field{urlday}{25}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ja.wikipedia.org/wiki/%E7%B5%84%E7%89%88
+      \endverb
+      \verb{url}
+      \verb https://ja.wikipedia.org/wiki/%E7%B5%84%E7%89%88
+      \endverb
+    \endentry
+    \entry{reutenauer2008brief}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2141fc84e40fe6d428c4a2dec9438587}{%
+           family={Reutenauer},
+           familyi={R\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2141fc84e40fe6d428c4a2dec9438587}
+      \strng{fullhash}{2141fc84e40fe6d428c4a2dec9438587}
+      \strng{bibnamehash}{2141fc84e40fe6d428c4a2dec9438587}
+      \strng{authorbibnamehash}{2141fc84e40fe6d428c4a2dec9438587}
+      \strng{authornamehash}{2141fc84e40fe6d428c4a2dec9438587}
+      \strng{authorfullhash}{2141fc84e40fe6d428c4a2dec9438587}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EuroBachoTEX 2007}
+      \field{title}{A brief history of TEX, volume II}
+      \field{year}{2008}
+      \field{pages}{68}
+      \range{pages}{1}
+    \endentry
+    \entry{TeXdiff_wtsnjp}{online}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{\TeX と\LaTeX の違い - ラング・ラグー}
+      \field{urlday}{26}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://blog.wtsnjp.com/2016/12/19/tex-and-latex/
+      \endverb
+      \verb{url}
+      \verb https://blog.wtsnjp.com/2016/12/19/tex-and-latex/
+      \endverb
+    \endentry
+    \entry{LaTeX_TeXWiki}{online}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{{\LaTeX - \TeX{} Wiki}}
+      \field{urlday}{26}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://texwiki.texjp.org/LaTeX#f2915fa5
+      \endverb
+      \verb{url}
+      \verb https://texwiki.texjp.org/LaTeX#f2915fa5
+      \endverb
+    \endentry
+    \entry{TeXwiki}{online}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{{\TeX{} Wiki}}
+      \field{urlday}{25}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://texwiki.texjp.org/
+      \endverb
+      \verb{url}
+      \verb https://texwiki.texjp.org/
+      \endverb
+    \endentry
+    \entry{Unicode_Wikipedia}{online}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{title}{{Unicode - Wikipedia}}
+      \field{urlday}{26}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ja.wikipedia.org/wiki/Unicode
+      \endverb
+      \verb{url}
+      \verb https://ja.wikipedia.org/wiki/Unicode
+      \endverb
+    \endentry
+    \entry{師茂樹2009unicode}{article}{}
+      \name{author}{1}{}{%
+        {{hash=34b9cc4b4e2a52faeb77d232f753a94f}{%
+           family={師茂樹},
+           familyi={師\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {一般社団法人 CIEC}%
+      }
+      \strng{namehash}{34b9cc4b4e2a52faeb77d232f753a94f}
+      \strng{fullhash}{34b9cc4b4e2a52faeb77d232f753a94f}
+      \strng{bibnamehash}{34b9cc4b4e2a52faeb77d232f753a94f}
+      \strng{authorbibnamehash}{34b9cc4b4e2a52faeb77d232f753a94f}
+      \strng{authornamehash}{34b9cc4b4e2a52faeb77d232f753a94f}
+      \strng{authorfullhash}{34b9cc4b4e2a52faeb77d232f753a94f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{コンピュータ \& エデュケーション}
+      \field{title}{Unicode とのつきあい方―漢字文化圏を中心に―}
+      \field{volume}{27}
+      \field{year}{2009}
+      \field{pages}{12\bibrangedash 17}
+      \range{pages}{6}
+    \endentry
+    \entry{XeTeX_Wikipedia}{online}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{title}{{\XeTeX{} - Wikipedia}}
+      \field{urlday}{26}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ja.wikipedia.org/wiki/XeTeX
+      \endverb
+      \verb{url}
+      \verb https://ja.wikipedia.org/wiki/XeTeX
+      \endverb
+    \endentry
+    \entry{XeTeX_TeXWiki}{online}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{title}{{\XeTeX{} - \TeX{} Wiki}}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://texwiki.texjp.org/?XeTeX
+      \endverb
+      \verb{url}
+      \verb https://texwiki.texjp.org/?XeTeX
+      \endverb
+    \endentry
+    \entry{XeTeX_nopoleos}{online}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{title}{{\XeLaTeX で日本語する件について}}
+      \field{urlday}{26}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://zrbabbler.sp.land.to/xelatex.html
+      \endverb
+      \verb{url}
+      \verb http://zrbabbler.sp.land.to/xelatex.html
+      \endverb
+    \endentry
+    \entry{八登2010日本人}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=02c4355d5cd467fd2cf0cb22c8132e34}{%
+           family={八登崇之},
+           familyi={八\bibinitperiod}}}%
+      }
+      \strng{namehash}{02c4355d5cd467fd2cf0cb22c8132e34}
+      \strng{fullhash}{02c4355d5cd467fd2cf0cb22c8132e34}
+      \strng{bibnamehash}{02c4355d5cd467fd2cf0cb22c8132e34}
+      \strng{authorbibnamehash}{02c4355d5cd467fd2cf0cb22c8132e34}
+      \strng{authornamehash}{02c4355d5cd467fd2cf0cb22c8132e34}
+      \strng{authorfullhash}{02c4355d5cd467fd2cf0cb22c8132e34}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{日本人の知らない\TeX}}
+      \field{year}{2010}
+    \endentry
+    \entry{幸田1987雲}{book}{}
+      \name{author}{1}{}{%
+        {{hash=03fbca28dad2371702de3134cdc6adb2}{%
+           family={幸田露伴},
+           familyi={幸\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {反省雜誌}%
+      }
+      \strng{namehash}{03fbca28dad2371702de3134cdc6adb2}
+      \strng{fullhash}{03fbca28dad2371702de3134cdc6adb2}
+      \strng{bibnamehash}{03fbca28dad2371702de3134cdc6adb2}
+      \strng{authorbibnamehash}{03fbca28dad2371702de3134cdc6adb2}
+      \strng{authornamehash}{03fbca28dad2371702de3134cdc6adb2}
+      \strng{authorfullhash}{03fbca28dad2371702de3134cdc6adb2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{雲のいろいろ}}
+      \field{year}{1987}
+    \endentry
+    \entry{ConTeXt_TeXWiki}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{\ConTeXt{} - \TeX{} Wiki}}
+      \field{urlday}{26}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://texwiki.texjp.org/?ConTeXt
+      \endverb
+      \verb{url}
+      \verb https://texwiki.texjp.org/?ConTeXt
+      \endverb
+    \endentry
+    \entry{Biber_Wikipedia}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Biber (LaTeX) - Wikipedia}}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Biber_(LaTeX)
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Biber_(LaTeX)
+      \endverb
+    \endentry
+    \entry{TeXLive_Acetaminophen}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{TeX Live をホンキで語る - Acetaminophen's diary}}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://acetaminophen.hatenablog.com/entry/texadvent2016-20161205#main-7
+      \endverb
+      \verb{url}
+      \verb https://acetaminophen.hatenablog.com/entry/texadvent2016-20161205#main-7
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

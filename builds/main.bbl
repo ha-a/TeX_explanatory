@@ -302,9 +302,87 @@
       \verb https://acetaminophen.hatenablog.com/entry/texadvent2016-20161205#main-7
       \endverb
     \endentry
-    \entry{LaTeXcompile_Yamamoto}{online}{}
+    \entry{documentclass_list}{online}{}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{標準的なクラスファイルの一覧 - \TeX Wiki}}
+      \verb{urlraw}
+      \verb https://texwiki.texjp.org/?%E3%82%AF%E3%83%A9%E3%82%B9%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7
+      \endverb
+      \verb{url}
+      \verb https://texwiki.texjp.org/?%E3%82%AF%E3%83%A9%E3%82%B9%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7
+      \endverb
+      \warn{\item online entry 'documentclass_list' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{jscls_doc}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8f4eb6d5a3ada357aa9880743c6b1fad}{%
+           family={奥村晴彦},
+           familyi={奥\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f4eb6d5a3ada357aa9880743c6b1fad}
+      \strng{fullhash}{8f4eb6d5a3ada357aa9880743c6b1fad}
+      \strng{bibnamehash}{8f4eb6d5a3ada357aa9880743c6b1fad}
+      \strng{authorbibnamehash}{8f4eb6d5a3ada357aa9880743c6b1fad}
+      \strng{authornamehash}{8f4eb6d5a3ada357aa9880743c6b1fad}
+      \strng{authorfullhash}{8f4eb6d5a3ada357aa9880743c6b1fad}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{\LaTeXe 新ドキュメントクラス}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://mirror.math.princeton.edu/pub/CTAN/macros/jptex/latex/jsclasses/jsclasses.pdf
+      \endverb
+      \verb{url}
+      \verb https://mirror.math.princeton.edu/pub/CTAN/macros/jptex/latex/jsclasses/jsclasses.pdf
+      \endverb
+      \warn{\item article entry 'jscls_doc' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{LaTeX_are}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{LaTeX の「アレなデフォルト」 傾向と対策 - Qiita}}
+      \verb{urlraw}
+      \verb https://qiita.com/zr_tex8r/items/297154ca924749e62471
+      \endverb
+      \verb{url}
+      \verb https://qiita.com/zr_tex8r/items/297154ca924749e62471
+      \endverb
+      \warn{\item online entry 'LaTeX_are' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Req4JapTex}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{日本語組版処理の要件（日本語版）}}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/2020/NOTE-jlreq-20200811/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/2020/NOTE-jlreq-20200811/
+      \endverb
+      \warn{\item online entry 'Req4JapTex' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{JIS_X_4051}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{JIS X 4051 - Wikipedia}}
+      \verb{urlraw}
+      \verb https://ja.wikipedia.org/wiki/JIS_X_4051
+      \endverb
+      \verb{url}
+      \verb https://ja.wikipedia.org/wiki/JIS_X_4051
+      \endverb
+      \warn{\item online entry 'JIS_X_4051' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{LaTeXcompile_Yamamoto}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{title}{{LaTeX コンパイル等 - Yamamoto's Laboratory}}
       \field{urlday}{27}
@@ -319,8 +397,8 @@
       \endverb
     \endentry
     \entry{参考文献_星野}{online}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{title}{{参考文献の書き方 - 星野光}}
       \field{urlday}{27}
@@ -335,8 +413,8 @@
       \endverb
     \endentry
     \entry{DVI_Wikipedia}{online}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{title}{{DVI - Wikipedia}}
       \field{urlday}{27}
@@ -351,8 +429,8 @@
       \endverb
     \endentry
     \entry{PostScript_Wikipedia}{online}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{title}{{PostScript - Wikipedia}}
       \field{urlday}{27}
@@ -446,6 +524,19 @@
       \verb https://acetaminophen.hatenablog.com/entry/2021/06/18/022108
       \endverb
     \endentry
+    \entry{pLaTeX_pinch}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{{【詳細】どうしてpLaTeXはLaTeX3でピンチになるのか - LuaLaTeX Lab}}
+      \verb{urlraw}
+      \verb https://lualatexlab.blog.fc2.com/blog-entry-44.html
+      \endverb
+      \verb{url}
+      \verb https://lualatexlab.blog.fc2.com/blog-entry-44.html
+      \endverb
+      \warn{\item online entry 'pLaTeX_pinch' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
     \entry{llmk_Workshop}{online}{}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
@@ -461,6 +552,125 @@
       \verb{url}
       \verb https://zrbabbler.hatenablog.com/entry/2020/09/23/190840
       \endverb
+    \endentry
+    \entry{Lua_Wikipedia}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{Lua - Wikipedia}}
+      \verb{urlraw}
+      \verb https://ja.wikipedia.org/wiki/Lua
+      \endverb
+      \verb{url}
+      \verb https://ja.wikipedia.org/wiki/Lua
+      \endverb
+      \warn{\item online entry 'Lua_Wikipedia' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Lua_intro}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{高速スクリプト言語[Lua]を始めよう}}
+      \verb{urlraw}
+      \verb https://ie.u-ryukyu.ac.jp/~e085739/lua.hajime.html
+      \endverb
+      \verb{url}
+      \verb https://ie.u-ryukyu.ac.jp/~e085739/lua.hajime.html
+      \endverb
+      \warn{\item online entry 'Lua_intro' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Luaコツ}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{徹底攻略！ LuaLaTeXでLuaコードを「書く」ためのコツ}}
+      \verb{urlraw}
+      \verb https://qiita.com/zr_tex8r/items/af2905bc93ac2c936a67
+      \endverb
+      \verb{url}
+      \verb https://qiita.com/zr_tex8r/items/af2905bc93ac2c936a67
+      \endverb
+      \warn{\item online entry 'Luaコツ' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{プログラミングwtTeX}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{TeXで使うプログラミング言語まとめ}}
+      \verb{urlraw}
+      \verb https://zenn.dev/k16/articles/e7690b036e534c#luatex%E3%81%AElua
+      \endverb
+      \verb{url}
+      \verb https://zenn.dev/k16/articles/e7690b036e534c#luatex%E3%81%AElua
+      \endverb
+      \warn{\item online entry 'プログラミングwtTeX' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{pattern_syn_lua}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{Pattern syntax using luacode}}
+      \verb{urlraw}
+      \verb https://tex.stackexchange.com/questions/499915/pattern-syntax-using-luacode
+      \endverb
+      \verb{url}
+      \verb https://tex.stackexchange.com/questions/499915/pattern-syntax-using-luacode
+      \endverb
+      \warn{\item online entry 'pattern_syn_lua' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Lua_challenge}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{思わずLuaでLaTeXしてみた}}
+      \verb{urlraw}
+      \verb http://zrbabbler.sp.land.to/lualatexlua.html
+      \endverb
+      \verb{url}
+      \verb http://zrbabbler.sp.land.to/lualatexlua.html
+      \endverb
+      \warn{\item online entry 'Lua_challenge' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{layout_doc}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a76f62b24405ee7664217995dfc90989}{%
+           family={McPherson},
+           familyi={M\bibinitperiod},
+           given={Kent},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{a76f62b24405ee7664217995dfc90989}
+      \strng{fullhash}{a76f62b24405ee7664217995dfc90989}
+      \strng{bibnamehash}{a76f62b24405ee7664217995dfc90989}
+      \strng{authorbibnamehash}{a76f62b24405ee7664217995dfc90989}
+      \strng{authornamehash}{a76f62b24405ee7664217995dfc90989}
+      \strng{authorfullhash}{a76f62b24405ee7664217995dfc90989}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Displaying page layout variables}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://ftp.jaist.ac.jp/pub/CTAN/macros/latex/required/tools/layout.pdf
+      \endverb
+      \verb{url}
+      \verb https://ftp.jaist.ac.jp/pub/CTAN/macros/latex/required/tools/layout.pdf
+      \endverb
+      \warn{\item article entry 'layout_doc' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{spacing_in_LaTeX}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{spacing in LaTeX}}
+      \verb{urlraw}
+      \verb https://www.sascha-frank.com/spacing.html
+      \endverb
+      \verb{url}
+      \verb https://www.sascha-frank.com/spacing.html
+      \endverb
+      \warn{\item online entry 'spacing_in_LaTeX' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring}
     \endentry
   \enddatalist
 \endrefsection

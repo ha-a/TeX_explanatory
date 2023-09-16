@@ -38,7 +38,9 @@
   stringstyle={\color[rgb]{0,0,0}},
   frame={tb},
   breaklines=true,
-  columns=[l]{fullflexible},
+  % columns=[l]{fullflexible},
+  columns=fixed,
+  basewidth=0.5em,
   numbers=left,
   %xrightmargin=0zw,
   %xleftmargin=3zw,
@@ -52,6 +54,8 @@
   },%
   emphstyle={\color{red}}%
 }%
+
+\usepackage{luacode}
 
 \usepackage[%
   backend=biber,%

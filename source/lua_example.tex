@@ -1,0 +1,28 @@
+\documentclass[twocolumn]{article}
+\usepackage{lipsum}
+\usepackage{luacode}
+\setlength{\columnsep}{1cm}
+\pagestyle{empty}
+\usepackage[top=0cm,bottom=0cm,left=15truemm,right=0truemm]{geometry}
+
+\begin{luacode*}
+vibrate_line = function (head, group, size)
+  i = 1.5
+  for list in node.traverse(head) do
+    i = i + 0.13
+    if list.id == node.id("hlist")
+    then
+      list.shift = list.shift - (1200000 * (math.sin (i)))
+    end
+  end
+  return head
+end
+\end{luacode*}
+
+\directlua{%
+  luatexbase.add_to_callback('vpack_filter', vibrate_line, "strict")%
+}
+
+\begin{document}
+  \lipsum[1-10]
+\end{document}

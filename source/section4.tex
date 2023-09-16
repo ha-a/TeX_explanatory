@@ -15,21 +15,26 @@
 \setcounter{section}{3}
 
 \begin{document}
+\clearpage
 \section{結局なにをどうするのか}
 \addtocontents{lof}{\protect\addvspace{1em}}
 \noindent
 ここまでで，\TeX があって，その拡張としていくつか種類があり，\TeX たちを楽に使うための\LaTeX も何種類か存在することがわかった．
-説明はしていないが，文書には文書クラスというものがあり（\verb|jsarticle|とか\verb|jsbook|とか），適宜選ばなくてはならない．
-文献管理の方法も一つではなく，コンパイルを自動化してくれるツールも一つシェア率が高いものがあるとは言え，他にも選択肢がある．
-もはや説明していないが，エディタも何種類も存在する．
+\verb|tex|ファイル中では文書クラスも適宜選ばなくてはならない．
+文献管理の方法も一つではなく，コンパイルを自動化してくれるツールも（一つシェア率が高いものがあるとは言え）他にも選択肢がある．
 もちろん，日本語を扱えないものや明らかに目的が違うものなどもあるため，その中から選択していく必要はあるが，それでも選択肢が何個もあるのは確かである．
-では我々はなにを選択するべきなのか．
+では，我々はなにを選択するべきなのか．
+\begin{center}
+  \begin{minipage}{0.7\linewidth}
+    \centering
+    \begin{itembox}{結論}
+      \centering
+      \LuaLaTeX\ $+$ \upBibTeX\,(or Bib\LaTeX) $+$ bxjsclasses $+$ \verb|latexmk| 
+    \end{itembox}  
+  \end{minipage}\hfill
+\end{center}
 
-\begin{itembox}{結論}
-  \centering
-  \LuaLaTeX\ $+$ \upBibTeX\,(or Bib\LaTeX) $+$ \verb|latexmk| 
-\end{itembox}
-これは結局カスタマイズ性を優先している方法である．
+\noindent これは結局カスタマイズ性を優先している方法である．
 その中で個人的には一番「特別なにも考えなくてもいいレシピ」である．
 \LuaLaTeX を使う理由としては
 \begin{itemize}
@@ -38,13 +43,13 @@
 \end{itemize}
 などが挙げられるが，さらにもう少し\TeX を自在に扱いたいと思ったとして
 \begin{itemize}
-  \item OpenType対応なので，フォントの設定が楽
+  \item OpenType対応なので，フォントの設定が楽．
   \item 扱いが難しいとされる原始的な\TeX 言語を扱わなくてもLuaによって柔軟なカスタマイズが可能．
 \end{itemize}
 などもメリットであろう\supercite{JPLaTeX_Yato}．
 一方で，デメリットとして\LuaLaTeX は処理が遅いことが挙げられるが，以前は20倍程度遅かったところ，最近では2倍程度に抑えられており\supercite{LuaTeX_notslow}，今後さらに速くなっていくと考えられる．
 
-逆に(u)\pLaTeX を使わない理由としては，欧文と和文でフォントの扱いが違うためにせっかくの文書が美しくならなかったり，近いうちにまともに動かなくなるなんて話もあったり\supercite{pLaTeX_danger}\footnote{おそらく，結局誰かがどうにかして実際に使えなくなることはないのだろうが，それでもそのようなリスクを抱えるものをわざわざ使う理由は特にない．}するからである．
+逆に(u)\pLaTeX を使わない理由としては，欧文と和文でフォントの扱いが違うためにせっかくの文書が美しくならなかったり，近いうちにまともに動かなくなるなんて話もあったり\supercite{pLaTeX_danger,pLaTeX_pinch}\footnote{これは先述した開発中の\LaTeX 次期バージョン\LaTeX3では\pTeX に対応しない可能性があるからである．他の新しい手段があるのに，日本だけでガラパゴス化されたものに対応すしないかもしれないというのも理解できる．しかしまあ，おそらく結局誰かがどうにかして実際に使えなくなることはないのだろうが，それでもそのようなリスクを抱えるものをわざわざ使う理由も特にない．}するからである．
 
 一方で\upBibTeX を用いるのは簡単に
 \begin{itemize}
@@ -64,16 +69,21 @@
 からである．
 
 一方で，もしコンパイルの速さを優先するなら，
-\begin{screen}
-  \centering
-  \upLaTeX\ $+$ \upBibTeX\ $+$ \verb|dvipdfmx| ($+$ \verb|latexmk|)
-\end{screen}
+\begin{center}
+  \begin{minipage}{0.7\linewidth}
+    \centering
+    \begin{screen}
+      \centering
+      \upLaTeX\ $+$ \upBibTeX\ $+$ \verb|dvipdfmx| $+$ jsclasses ($+$ \verb|latexmk|)
+    \end{screen}
+  \end{minipage}\hfill
+\end{center}
 なども考えられよう．
 この場合，いつでも使える\verb|latexmk|で自動化せずに，必要な回数コンパイルするレシピを作って処理するのがより速いだろう．
 例えばただの授業の課題など，体裁にこだわる必要のない，たかだか数ページのものを作るのならコンパイルの速度を優先するのがいい．
 ただ，どうせコンパイル中も編集は行えることを加味すれば\LuaLaTeX を利用するのがいいように思える．
 
-「ぼくがかんがえたさいきょうのてふかんきょう」を巻末に記す（予定な）ので，参考にしてほしい．
+
 
 \ifSubfilesClassLoaded{%
   \printbibliography

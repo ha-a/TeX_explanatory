@@ -1,16 +1,17 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2023.4.3)  4 APR 2023 13:55
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.13)  16 SEP 2023 11:56
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/hbk-asakr/Folders/tmp/TeX_explanatory/source/main.tex
 (/Users/hbk-asakr/Folders/tmp/TeX_explanatory/source/main.tex
-LaTeX2e <2022-11-01> patch level 1
-Lua module: luaotfload 2022-10-03 3.23 Lua based OpenType font support
-Lua module: lualibs 2022-10-04 2.75 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2022-10-04 2.75 ConTeXt Lua libraries -- extended collection.
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended collection.
 luaotfload | conf : Root cache directory is "/Users/hbk-asakr/Library/texlive/2023/texmf-var/luatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2022-10-03.lua" from kpse-resolved path "/usr/local/texlive/2023/texmf-dist/tex/luatex/luaotfload/fontloader-2022-10-03.lua".
+luaotfload | init : Loading fontloader "fontloader-2023-08-19.lua" from kpse-resolved path "/usr/local/texlive/2023/texmf-dist/tex/luatex/luaotfload/fontloader-2023-08-19.lua".
 Lua-only attribute luaotfload@noligature = 1
-luaotfload | init : Context OpenType loader version 3.120
+luaotfload | init : Context OpenType loader version 3.133
 Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
@@ -33,9 +34,9 @@ Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
-Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'. L3 programming layer <2023-03-30>
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
 Inserting `tracingstacklevels' in `input_level_string'. (/usr/local/texlive/2023/texmf-dist/tex/latex/bxjscls/bxjsarticle.cls
-Document Class: bxjsarticle 2022/04/10 v2.7a BXJS document classes
+Document Class: bxjsarticle 2023/07/17 v2.9 BXJS document classes
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count183
@@ -50,14 +51,12 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip50
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/bxjscls/bxjscompat.sty
-Package: bxjscompat 2022/04/10 v2.7a BXJS document classes
-) (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifpdf.sty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+\KV@toks@=\toks17
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
-)) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fleqn.clo
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/bxjscls/bxjscompat.sty
+Package: bxjscompat 2023/07/17 v2.9 BXJS document classes
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fleqn.clo
 File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
 \mathindent=\skip51
 Applying: [2015/01/01] Make \[ robust on input line 50.
@@ -67,22 +66,20 @@ Applying: [2015/01/01] Make \] robust on input line 74.
 LaTeX Info: Redefining \] on input line 75.
 Already applied: [0000/00/00] Make \] robust on input line 83.
 )
-\stockwidth=\dimen141
-\stockheight=\dimen142
-\jsc@mpt=\dimen143
-\jsc@mmm=\dimen144
-\jsZw=\dimen145
+\jsc@mpt=\dimen141
+\jsc@mmm=\dimen142
+\jsZw=\dimen143
 (/usr/local/texlive/2023/texmf-dist/tex/latex/type1cm/type1cm.sty
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, patched RF)
 )
 \jsc@smallskipamount=\skip52
 luaotfload | db : Font names database loaded from /Users/hbk-asakr/Library/texlive/2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz
-\Cht=\dimen146
-\Cdp=\dimen147
-\Cwd=\dimen148
-\Cvs=\dimen149
-\Chs=\dimen150
-\fullwidth=\dimen151
+\Cht=\dimen144
+\Cdp=\dimen145
+\Cwd=\dimen146
+\Cvs=\dimen147
+\Chs=\dimen148
+\fullwidth=\dimen149
 (/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -91,15 +88,15 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@cnth=\count186
 \Gm@cntv=\count187
 \c@Gm@tempcnt=\count188
-\Gm@bindingoffset=\dimen152
-\Gm@wd@mp=\dimen153
-\Gm@odd@mp=\dimen154
-\Gm@even@mp=\dimen155
-\Gm@layoutwidth=\dimen156
-\Gm@layoutheight=\dimen157
-\Gm@layouthoffset=\dimen158
-\Gm@layoutvoffset=\dimen159
-\Gm@dimlist=\toks17
+\Gm@bindingoffset=\dimen150
+\Gm@wd@mp=\dimen151
+\Gm@odd@mp=\dimen152
+\Gm@even@mp=\dimen153
+\Gm@layoutwidth=\dimen154
+\Gm@layoutheight=\dimen155
+\Gm@layouthoffset=\dimen156
+\Gm@layoutvoffset=\dimen157
+\Gm@dimlist=\toks18
 )
 \c@part=\count189
 \c@section=\count190
@@ -112,31 +109,34 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \c@table=\count196
 \abovecaptionskip=\skip53
 \belowcaptionskip=\skip54
-\jsc@tocl@width=\dimen160
-\@lnumwidth=\dimen161
-\bibindent=\dimen162
+\jsc@tocl@width=\dimen158
+\@lnumwidth=\dimen159
+\bibindent=\dimen160
 (/usr/local/texlive/2023/texmf-dist/tex/latex/bxwareki/bxwareki.sty
-Package: bxwareki 2019/06/01 v0.6
+Package: bxwareki 2023/07/07 v0.7
 \c@warekiyear=\count197
 (/usr/local/texlive/2023/texmf-dist/tex/latex/bxwareki/bxwareki-cd.def
-File: bxwareki-cd.def 2019/06/01 v0.6
+File: bxwareki-cd.def 2023/07/07 v0.7
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/bxjscls/bxjsja-standard.def
-File: bxjsja-standard.def 2022/04/10 v2.7a BXJS document classes
+File: bxjsja-standard.def 2023/07/17 v2.9 BXJS document classes
 (/usr/local/texlive/2023/texmf-dist/tex/latex/bxjscls/bxjsja-minimal.def
-File: bxjsja-minimal.def 2022/04/10 v2.7a BXJS document classes
-\everypar=\toks18
+File: bxjsja-minimal.def 2023/07/17 v2.9 BXJS document classes
+\everypar=\toks19
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count198
 ) (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/luatexja.sty
-Package: luatexja 2023-02-11 Japanese Typesetting with Lua(La)TeX
+Package: luatexja 2023-05-03 Japanese Typesetting with Lua(La)TeX
 (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
-Package: luatexja-core 2023-02-11 Core of LuaTeX-ja
+Package: luatexja-core 2023-04-06 Core of LuaTeX-ja
 (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
 Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
 (/usr/local/texlive/2023/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
 Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
-\@catcodetablestackcnt=\count198
+\@catcodetablestackcnt=\count199
 )
-\CatcodeTableOther=\catcodetable12
-\CatcodeTableExpl=\catcodetable13
+\CatcodeTableOther=\catcodetable14
+\CatcodeTableExpl=\catcodetable15
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -147,33 +147,30 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks19
+\pdftexcmds@toks=\toks20
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks20
-\XKV@tempa@toks=\toks21
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
 )
-\XKV@depth=\count199
+\XKV@depth=\count266
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count266
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/everyhook/everyhook.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/svn-prov/svn-prov.sty
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/everyhook/everyhook.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/svn-prov/svn-prov.sty
 Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
 )
 Package: everyhook 2014/11/26 v1.2 (SVN Rev: 12)\ Hooks for low level TeX everyX primitives.
-\everypar=\toks22
-\frozen@everymath=\toks23
-\frozen@everydisplay=\toks24
-\everyhbox=\toks25
-\everyvbox=\toks26
-\everycr=\toks27
+\everypar=\toks23
+\frozen@everymath=\toks24
+\frozen@everydisplay=\toks25
+\everyhbox=\toks26
+\everyvbox=\toks27
+\everycr=\toks28
 )
 \ltjlineendcomment=\count267
-\ltj@dimen@zw=\dimen163
-\ltj@dimen@zh=\dimen164
-\ltj@dimen@jQ=\dimen165
+\ltj@dimen@zw=\dimen161
+\ltj@dimen@zh=\dimen162
+\ltj@dimen@jQ=\dimen163
 \ltj@icflag=\attribute4
 \ltj@curjfnt=\attribute5
 \ltj@curtfnt=\attribute6
@@ -190,7 +187,7 @@ Package: everyhook 2014/11/26 v1.2 (SVN Rev: 12)\ Hooks for low level TeX everyX
 \ltj@dir=\attribute17
 \ltj@@japanese=\language2
 \ltj@tempcnta=\count268
-\ltj@tempdima=\dimen166
+\ltj@tempdima=\dimen164
 \ltj@@stack=\count269
 \ltj@@group@level=\count270
 \ltj@kcat0=\attribute18
@@ -214,7 +211,7 @@ Inserting `ltj.direction' in `vpack_filter'.
 Inserting `ltj.direction' in `pre_output_filter'.
 Inserting `ltj.lineskip' in `post_linebreak_filter'.
 Inserting `ltj.lineskip' in `append_to_vlist_filter'.
-Lua module: luatexja.jfont 2022-08-20 Loader for Japanese fonts
+Lua module: luatexja.jfont 2023-04-06 Loader for Japanese fonts
 Removing  `luaotfload.define_font' from `define_font'.
 Inserting `luatexja.font_callback' in `define_font'.
 Removing  `luaotfload.aux.set_sscale_dimens' from `luaotfload.patch_font'.
@@ -292,73 +289,74 @@ Package: ltj-base 2021-03-16
 \ltj@tempcntc=\count272
 \ltj@afbox=\box52
 )
-\ltj@@italic@inner=\luafunction26
-\ltj@@start@time@measure@inner=\luafunction27
-\ltj@@stop@time@measure@inner=\luafunction28
-\ltj@@jfont@inner=\luafunction29
-\ltj@zw@inner=\luafunction30
-\ltj@zh@inner=\luafunction31
-\ltj@reset@globaldefs@inner=\luafunction32
-\ltj@restore@globaldefs@inner=\luafunction33
-\ltj@@disihb@inner=\luafunction34
-\ltj@@ihb@inner=\luafunction35
-\ltj@@fakeparbegin@inner=\luafunction36
-\ltj@@fakeboxbdd@inner=\luafunction37
-\ltj@@ins@xk@inner=\luafunction38
-\ltj@@ins@k@inner=\luafunction39
-\ltjsetkanjiskip@inner=\luafunction40
-\ltjsetxkanjiskip@inner=\luafunction41
-\ltj@@getparam@one@inner=\luafunction42
-\ltj@alljachar@inner=\luafunction43
-\ltj@@lua@populate@insertwhatsit@inner=\luafunction44
-\ltj@@vadjust@begin@inner=\luafunction45
-\ltj@@vadjust@dirhook@inner=\luafunction46
-\ltj@@vadjust@check@dir@inner=\luafunction47
-\ltj@@box@dirhook@inner=\luafunction48
-\ltj@@reset@badness@inner=\luafunction49
-\ltj@@lua@raisebox@inner=\luafunction50
-\ltj@@vsplit@inner=\luafunction51
-\ltj@@lua@unboxcheckdir@inner=\luafunction52
-\ltj@@lua@uncopycheckdir@inner=\luafunction53
-\ltj@@lua@uncopy@restore@whatsit@inner=\luafunction54
+\ltj@@italic@inner=\luafunction25
+\ltj@@start@time@measure@inner=\luafunction26
+\ltj@@stop@time@measure@inner=\luafunction27
+\ltj@@jfont@inner=\luafunction28
+\ltj@zw@inner=\luafunction29
+\ltj@zh@inner=\luafunction30
+\ltj@reset@globaldefs@inner=\luafunction31
+\ltj@restore@globaldefs@inner=\luafunction32
+\ltj@@disihb@inner=\luafunction33
+\ltj@@ihb@inner=\luafunction34
+\ltj@@fakeparbegin@inner=\luafunction35
+\ltj@@fakeboxbdd@inner=\luafunction36
+\ltj@@ins@xk@inner=\luafunction37
+\ltj@@ins@k@inner=\luafunction38
+\ltjsetkanjiskip@inner=\luafunction39
+\ltjsetxkanjiskip@inner=\luafunction40
+\ltj@@getparam@one@inner=\luafunction41
+\ltj@alljachar@inner=\luafunction42
+\ltj@@lua@populate@insertwhatsit@inner=\luafunction43
+\ltj@@vadjust@begin@inner=\luafunction44
+\ltj@@vadjust@dirhook@inner=\luafunction45
+\ltj@@vadjust@check@dir@inner=\luafunction46
+\ltj@@box@dirhook@inner=\luafunction47
+\ltj@@reset@badness@inner=\luafunction48
+\ltj@@lua@raisebox@inner=\luafunction49
+\ltj@@vsplit@inner=\luafunction50
+\ltj@@lua@unboxcheckdir@inner=\luafunction51
+\ltj@@lua@uncopycheckdir@inner=\luafunction52
+\ltj@@lua@uncopy@restore@whatsit@inner=\luafunction53
 (load cache: ltj-kinsoku_default.luc) (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/ltj-latex.sty
 Package: ltj-latex 2022-10-15 LaTeX support of LuaTeX-ja
 Inserting `ltj.direction' in `pre_shipout_filter'. (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjfont.sty
-Package: lltjfont 2021-05-26 Patch to NFSS2 for LuaTeX-ja
+Package: lltjfont 2023-04-13 Patch to NFSS2 for LuaTeX-ja
 \ltj@@latex@plv=\count273
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/tuenc.def
 File: tuenc.def 2021/04/29 v2.0v Standard LaTeX file
-\@remove@tlig@@@=\luafunction55
+\@remove@tlig@@@=\luafunction54
 LaTeX Font Info:    Redeclaring font encoding TU on input line 105.
 )
-\cht=\dimen167
-\cdp=\dimen168
-\cwd=\dimen169
-\cvs=\dimen170
-\chs=\dimen171
-\cHT=\dimen172
+\cht=\dimen165
+\cdp=\dimen166
+\cwd=\dimen167
+\cvs=\dimen168
+\chs=\dimen169
+\cHT=\dimen170
 \dstrutbox=\box53
 \tstrutbox=\box54
 \zstrutbox=\box55
 LaTeX Info: Redefining \strut on input line 91.
-\ltj@@add@fenc@@inner=\luafunction56
-\ltj@@add@kyenc@@inner=\luafunction57
-\ltj@@add@ktenc@@inner=\luafunction58
-\ltj@@is@kyenc@@inner=\luafunction59
-\ltj@@is@ktenc@@inner=\luafunction60
-\ltj@@is@kenc@@inner=\luafunction61
-\ltj@@is@ffam@@inner=\luafunction62
-\ltj@@add@ffam@@inner=\luafunction63
-\ltj@@add@kfam@@inner=\luafunction64
-\ltj@@adjust@baseline@inner=\luafunction65
+\ltj@@add@fenc@@inner=\luafunction55
+\ltj@@add@kyenc@@inner=\luafunction56
+\ltj@@add@ktenc@@inner=\luafunction57
+\ltj@@is@kyenc@@inner=\luafunction58
+\ltj@@is@ktenc@@inner=\luafunction59
+\ltj@@is@kenc@@inner=\luafunction60
+\ltj@@is@ffam@@inner=\luafunction61
+\ltj@@add@ffam@@inner=\luafunction62
+\ltj@@add@kfam@@inner=\luafunction63
+\ltj@@adjust@baseline@inner=\luafunction64
 LaTeX Info: Redefining \fontencoding on input line 646.
 LaTeX Info: Redefining \fontfamily on input line 689.
 LaTeX Info: Redefining \fontseries on input line 923.
 LaTeX Info: Redefining \fontseriesforce on input line 924.
 LaTeX Info: Redefining \fontshape on input line 944.
 LaTeX Info: Redefining \fontshapeforce on input line 955.
-\ltj@@jfont@@jfmonly@@inner=\luafunction66
-\ltj@@does@alt@set@@inner=\luafunction67
+\ltj@@jfont@@jfmonly@@inner=\luafunction65
+\ltj@@does@alt@set@@inner=\luafunction66
+\ltj@@cipath@clear@inner=\luafunction67
 ) (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjdefs.sty
 Package: lltjdefs 2022-01-23 Default font settings of LuaTeX-ja
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
@@ -374,16 +372,16 @@ LaTeX Info: Redefining \gt on input line 84.
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 (Font)                  JY3/mc/m/n --> JY3/gt/m/n on input line 88.
 ) (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjcore.sty
-Package: lltjcore 2022-05-30 Patch to LaTeX2e Kernel for LuaTeX-ja
+Package: lltjcore 2023-02-26 Patch to LaTeX2e Kernel for LuaTeX-ja
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-03-30 L3 programming layer (loader) 
+Package: expl3 2023-08-29 L3 programming layer (loader) 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2023-03-30 L3 backend support: PDF output (LuaTeX)
+File: l3backend-luatex.def 2023-04-19 L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count274
 Inserting `l3color' in `luaotfload.parse_color'.
 \l__pdf_internal_box=\box56
 ))
-\@tombowwidth=\dimen173
+\@tombowwidth=\dimen171
 \@TL=\box57
 \@Tl=\box58
 \@TC=\box59
@@ -397,11 +395,11 @@ Inserting `l3color' in `luaotfload.parse_color'.
 \@CL=\box67
 \@CR=\box68
 (load cache: extra_lmmono9-regular.luc)
-\@bannertoken=\toks28
-\@@paperheight=\dimen174
-\@@paperwidth=\dimen175
-\@@topmargin=\dimen176
-LaTeX Info: Redefining \underline on input line 266.
+\@bannertoken=\toks29
+\@@paperheight=\dimen172
+\@@paperwidth=\dimen173
+\@@topmargin=\dimen174
+LaTeX Info: Redefining \underline on input line 280.
 ) (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjp-atbegshi.sty
 Package: lltjp-atbegshi 2022-08-12 Patching \shipout hooks for LuaTeX-ja
 \l__platex_shipout_dummy_box=\box69
@@ -410,7 +408,7 @@ Package: lltjp-geometry 2021-10-24 Patch to geometry for LuaTeX-ja with vertical
 (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )))
-\ltj@temp@cctb=\catcodetable14
+\ltj@temp@cctb=\catcodetable16
 ) (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty
 Package: luatexja-compat 2020-08-08 Compatibility with pTeX
 (load cache: ltj-jisx0208.luc)
@@ -419,9 +417,9 @@ Package: luatexja-compat 2020-08-08 Compatibility with pTeX
 )) (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec.sty
 Package: luatexja-fontspec 2020-09-14 fontspec support of LuaTeX-ja
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2023-08-29 LaTeX2e option processing using LaTeX3 keys
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2023-02-02 L3 Experimental document command parser
+Package: xparse 2023-08-29 L3 Experimental document command parser
 )
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX (/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
@@ -437,9 +435,9 @@ Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
 \l__fontspec_emdef_int=\count285
 \l__fontspec_strong_int=\count286
 \l__fontspec_strongdef_int=\count287
-\l__fontspec_tmpa_dim=\dimen177
-\l__fontspec_tmpb_dim=\dimen178
-\l__fontspec_tmpc_dim=\dimen179
+\l__fontspec_tmpa_dim=\dimen175
+\l__fontspec_tmpb_dim=\dimen176
+\l__fontspec_tmpc_dim=\dimen177
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
@@ -466,17 +464,17 @@ Package fontspec Info: Font family 'HaranoAjiMincho-Regular.otf(0)' created
 (fontspec)             series/shapes:
 (fontspec)              
 
-LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 635.
+LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 659.
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
-(Font)                  JY3/mc/m/n --> JY3/HaranoAjiMincho-Regular.otf(0)/m/n on input line 635.
+(Font)                  JY3/mc/m/n --> JY3/HaranoAjiMincho-Regular.otf(0)/m/n on input line 659.
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY3/gt/m/n --> JY3/HaranoAjiMincho-Regular.otf(0)/m/n on input line 635.
+(Font)                  JY3/gt/m/n --> JY3/HaranoAjiMincho-Regular.otf(0)/m/n on input line 659.
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY3/HaranoAjiMincho-Regular.otf(0)/m/n --> JY3/HaranoAjiMincho-Regular.otf(0)/b/n on input line 635.
+(Font)                  JY3/HaranoAjiMincho-Regular.otf(0)/m/n --> JY3/HaranoAjiMincho-Regular.otf(0)/b/n on input line 659.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 635.
+(Font)              scaled to size 9.24713pt on input line 659.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 635.
+(Font)              scaled to size 9.24713pt on input line 659.
 
 Package fontspec Info: Font family 'HaranoAjiGothic-Medium.otf(0)' created for
 (fontspec)             font 'HaranoAjiGothic-Medium.otf' with options
@@ -486,13 +484,13 @@ Package fontspec Info: Font family 'HaranoAjiGothic-Medium.otf(0)' created for
 (fontspec)             series/shapes:
 (fontspec)              
 
-LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 636.
+LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 660.
 LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
-(Font)                  JY3/gt/m/n --> JY3/HaranoAjiGothic-Medium.otf(0)/m/n on input line 636.
+(Font)                  JY3/gt/m/n --> JY3/HaranoAjiGothic-Medium.otf(0)/m/n on input line 660.
 LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
-(Font)                  JY3/gt/m/n --> JY3/HaranoAjiGothic-Medium.otf(0)/m/n on input line 636.
-LaTeX Info: Redefining \textmc on input line 719.
-LaTeX Info: Redefining \textgt on input line 720.
+(Font)                  JY3/gt/m/n --> JY3/HaranoAjiGothic-Medium.otf(0)/m/n on input line 660.
+LaTeX Info: Redefining \textmc on input line 743.
+LaTeX Info: Redefining \textgt on input line 744.
 )) (./engine.tex) (/usr/local/texlive/2023/texmf-dist/tex/latex/datetime2-en-fulltext/datetime2-en-fulltext.sty
 Package: datetime2-en-fulltext 2015/04/01 v1.0
 (/usr/local/texlive/2023/texmf-dist/tex/latex/datetime2/datetime2.sty
@@ -502,14 +500,14 @@ Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
 (/usr/local/texlive/2023/texmf-dist/tex/generic/tracklang/tracklang.tex)) (/usr/local/texlive/2023/texmf-dist/tex/latex/datetime2/datetime2-calc.sty
 Package: datetime2-calc 2021/03/21 v1.5.7 (NLCT)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks29
-\pgfkeys@temptoks=\toks30
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
 (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks31
+\pgfkeys@tmptoks=\toks32
 ))) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen180
-\pgfutil@tempdimb=\dimen181
+\pgfutil@everybye=\toks33
+\pgfutil@tempdima=\dimen178
+\pgfutil@tempdimb=\dimen179
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box70
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -541,8 +539,8 @@ Package: fcnumparser 2017/06/15
 \fc@digit@counter=\count301
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks33
-\ex@=\dimen182
+\@emptytoks=\toks34
+\ex@=\dimen180
 )
 \c@padzeroesN=\count302
 \fc@tmpcatcode=\count303
@@ -570,7 +568,7 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@orf=\skip63
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/fancyhdr/extramarks.sty
 Package: extramarks 2022/11/09 v4.1 Extra marks for LaTeX
-\@temptokenb=\toks34
+\@temptokenb=\toks35
 )
 Package bxjsarticle Info: Patch to fancyhdr is applied.
 luaotfload | cache : Lookup cache loaded from /Users/hbk-asakr/Library/texlive/2023/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load cache: extra_texgyretermes-regular.luc)(load cache: extra_texgyretermes-bolditalic.luc)(load cache: extra_texgyretermes-bold.luc)(load cache: extra_texgyretermes-italic.luc)
@@ -927,12 +925,12 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box71
 \beforetitleunit=\skip64
 \aftertitleunit=\skip65
-\ttl@plus=\dimen183
-\ttl@minus=\dimen184
-\ttl@toksa=\toks35
-\titlewidth=\dimen185
-\titlewidthlast=\dimen186
-\titlewidthfirst=\dimen187
+\ttl@plus=\dimen181
+\ttl@minus=\dimen182
+\ttl@toksa=\toks36
+\titlewidth=\dimen183
+\titlewidthlast=\dimen184
+\titlewidthfirst=\dimen185
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
@@ -970,29 +968,29 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cfttabindent=\skip95
 \cfttabnumwidth=\skip96
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \c@tracingmulticols=\count314
 \mult@box=\box72
-\multicol@leftmargin=\dimen188
+\multicol@leftmargin=\dimen186
 \c@unbalance=\count315
 \c@collectmore=\count316
 \doublecol@number=\count317
 \multicoltolerance=\count318
 \multicolpretolerance=\count319
-\full@width=\dimen189
-\page@free=\dimen190
-\premulticols=\dimen191
-\postmulticols=\dimen192
+\full@width=\dimen187
+\page@free=\dimen188
+\premulticols=\dimen189
+\postmulticols=\dimen190
 \multicolsep=\skip97
 \multicolbaselineskip=\skip98
 \partial@page=\box73
 \last@line=\box74
-\maxbalancingoverflow=\dimen193
-\mult@rightbox=\box75
-\mult@grightbox=\box76
-\mult@firstbox=\box77
-\mult@gfirstbox=\box78
-\@tempa=\box79
+\mc@boxedresult=\box75
+\maxbalancingoverflow=\dimen191
+\mult@rightbox=\box76
+\mult@grightbox=\box77
+\mult@firstbox=\box78
+\mult@gfirstbox=\box79
 \@tempa=\box80
 \@tempa=\box81
 \@tempa=\box82
@@ -1028,14 +1026,15 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box112
 \@tempa=\box113
 \@tempa=\box114
+\@tempa=\box115
 \c@minrows=\count320
 \c@columnbadness=\count321
 \c@finalcolumnbadness=\count322
-\last@try=\dimen194
-\multicolovershoot=\dimen195
-\multicolundershoot=\dimen196
-\mult@nat@firstbox=\box115
-\colbreak@box=\box116
+\last@try=\dimen192
+\multicolovershoot=\dimen193
+\multicolundershoot=\dimen194
+\mult@nat@firstbox=\box116
+\colbreak@box=\box117
 \mc@col@check@num=\count323
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
@@ -1050,29 +1049,29 @@ Package graphics Info: Driver file: luatex.def on input line 107.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/luatex.def
 File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen197
-\Gin@req@width=\dimen198
+\Gin@req@height=\dimen195
+\Gin@req@width=\dimen196
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 (/usr/local/texlive/2023/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+Package: caption 2023/07/31 v3.6n Customizing captions (AR)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
-\caption@tempdima=\dimen199
-\captionmargin=\dimen256
-\caption@leftmargin=\dimen257
-\caption@rightmargin=\dimen258
-\caption@width=\dimen259
-\caption@indent=\dimen260
-\caption@parindent=\dimen261
-\caption@hangindent=\dimen262
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen197
+\captionmargin=\dimen198
+\caption@leftmargin=\dimen199
+\caption@rightmargin=\dimen256
+\caption@width=\dimen257
+\caption@indent=\dimen258
+\caption@parindent=\dimen259
+\caption@hangindent=\dimen260
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->{\small \advance \leftskip .0628\linewidth \advance \rightskip .0628\linewidth \vskip \abovecaptionskip \sbox \@tempboxa {#1\zwspace #2}\ifdim \wd \@tempboxa <\hsize \centering \fi #1\zwspace #2\par \vskip \belowcaptionskip } on input line 1176.
+Package caption Info: \@makecaption = \long macro:#1#2->{\small \advance \leftskip .0628\linewidth \advance \rightskip .0628\linewidth \vskip \abovecaptionskip \sbox \@tempboxa {#1\zwspace #2}\ifdim \wd \@tempboxa <\hsize \centering \fi #1\zwspace #2\par \vskip \belowcaptionskip } on input line 1170.
 )
 
 Package caption Warning: Unknown document class (or package),
@@ -1082,19 +1081,19 @@ See the caption package documentation for explanation.
 \c@caption@flags=\count324
 \c@continuedfloat=\count325
 )
-Package caption Info: New subtype `subfigure' on input line 239.
+Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count326
-Package caption Info: New subtype `subtable' on input line 239.
+Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count327
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2022/04/08 v2.17n AMS math features
+Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip99
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen263
+\pmbraise@=\dimen261
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -1109,13 +1108,13 @@ LaTeX Info: Redefining \colon on input line 410.
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box117
-\strutbox@=\box118
+\Mathstrutbox@=\box118
+\strutbox@=\box119
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen264
+\big@size=\dimen262
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count333
@@ -1128,21 +1127,21 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \dotsspace@=\muskip16
 \c@parentequation=\count335
 \dspbrk@lvl=\count336
-\tag@help=\toks36
+\tag@help=\toks37
 \row@=\count337
 \column@=\count338
 \maxfields@=\count339
-\andhelp@=\toks37
-\eqnshift@=\dimen265
-\alignsep@=\dimen266
-\tagshift@=\dimen267
-\tagwidth@=\dimen268
-\totwidth@=\dimen269
-\lineht@=\dimen270
-\@envbody=\toks38
+\andhelp@=\toks38
+\eqnshift@=\dimen263
+\alignsep@=\dimen264
+\tagshift@=\dimen265
+\tagwidth@=\dimen266
+\totwidth@=\dimen267
+\lineht@=\dimen268
+\@envbody=\toks39
 \multlinegap=\skip100
 \multlinetaggap=\skip101
-\mathdisplay@stack=\toks39
+\mathdisplay@stack=\toks40
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -1156,15 +1155,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks40
-\thm@bodyfont=\toks41
-\thm@headfont=\toks42
-\thm@notefont=\toks43
-\thm@headpunct=\toks44
+\thm@style=\toks41
+\thm@bodyfont=\toks42
+\thm@headfont=\toks43
+\thm@notefont=\toks44
+\thm@headpunct=\toks45
 \thm@preskip=\skip102
 \thm@postskip=\skip103
 \thm@headsep=\skip104
-\dth@everypar=\toks45
+\dth@everypar=\toks46
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
@@ -1177,29 +1176,29 @@ Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen271
-\ar@mcellbox=\box119
-\extrarowheight=\dimen272
-\NC@list=\toks46
+\col@sep=\dimen269
+\ar@mcellbox=\box120
+\extrarowheight=\dimen270
+\NC@list=\toks47
 \extratabsurround=\skip105
 \backup@length=\skip106
-\ar@cellbox=\box120
+\ar@cellbox=\box121
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
 (/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count340
-\l_MT_multwidth_dim=\dimen273
+\l_MT_multwidth_dim=\dimen271
 \origjot=\skip107
-\l_MT_shortvdotswithinadjustabove_dim=\dimen274
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen275
-\l_MT_above_intertext_sep=\dimen276
-\l_MT_below_intertext_sep=\dimen277
-\l_MT_above_shortintertext_sep=\dimen278
-\l_MT_below_shortintertext_sep=\dimen279
-\xmathstrut@box=\box121
-\xmathstrut@dim=\dimen280
+\l_MT_shortvdotswithinadjustabove_dim=\dimen272
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen273
+\l_MT_above_intertext_sep=\dimen274
+\l_MT_below_intertext_sep=\dimen275
+\l_MT_above_shortintertext_sep=\dimen276
+\l_MT_below_shortintertext_sep=\dimen277
+\xmathstrut@box=\box122
+\xmathstrut@dim=\dimen278
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/import/import.sty
@@ -1209,23 +1208,23 @@ Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/tascmac.sty
 Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
 Package tascmac Info: Patch from LuaTeX-ja will be applied on input line 44.
-\@savetbaselineshift=\dimen281
-\@saveybaselineshift=\dimen282
-\scb@x=\box122
-\scscb@x=\box123
-\@bw=\dimen283
-\@nbox=\box124
-\@nbody=\box125
-\@scw=\dimen284
-\ascmac@hoboxa=\box126
-\ascmac@hoboxb=\box127
-\@itemh=\dimen285
-\@iboxpos=\toks47
-\@iboxstr=\box128
-\@bwsp=\box129
-\@@bwsp=\box130
+\@savetbaselineshift=\dimen279
+\@saveybaselineshift=\dimen280
+\scb@x=\box123
+\scscb@x=\box124
+\@bw=\dimen281
+\@nbox=\box125
+\@nbody=\box126
+\@scw=\dimen282
+\ascmac@hoboxa=\box127
+\ascmac@hoboxb=\box128
+\@itemh=\dimen283
+\@iboxpos=\toks48
+\@iboxstr=\box129
+\@bwsp=\box130
+\@@bwsp=\box131
 \@bcal=\count341
-\shaderule=\dimen286
+\shaderule=\dimen284
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -1235,13 +1234,13 @@ Package color Info: Driver file: luatex.def on input line 149.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip108
-\enit@outerparindent=\dimen287
-\enit@toks=\toks48
-\enit@inbox=\box131
+\enit@outerparindent=\dimen285
+\enit@toks=\toks49
+\enit@inbox=\box132
 \enit@count@id=\count342
 \enitdp@description=\count343
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
 (/usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -1255,7 +1254,7 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+Package: nameref 2023-08-07 v2.53 Cross-referencing by name of section
 (/usr/local/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
@@ -1265,52 +1264,50 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count344
 )
-\@linkdim=\dimen288
+\@linkdim=\dimen286
 \Hy@linkcounter=\count345
 \Hy@pagecounter=\count346
 (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/usr/local/texlive/2023/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count347
 (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `setpagesize' set `false' on input line 4060.
-Package hyperref Info: Option `unicode' set `true' on input line 4060.
-Package hyperref Info: Option `pdfusetitle' set `true' on input line 4060.
-Package hyperref Info: Hyper figures OFF on input line 4177.
-Package hyperref Info: Link nesting OFF on input line 4182.
-Package hyperref Info: Hyper index ON on input line 4185.
-Package hyperref Info: Plain pages OFF on input line 4192.
-Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Option `setpagesize' set `false' on input line 4050.
+Package hyperref Info: Option `unicode' set `true' on input line 4050.
+Package hyperref Info: Option `pdfusetitle' set `true' on input line 4050.
+Package hyperref Info: Hyper figures OFF on input line 4167.
+Package hyperref Info: Link nesting OFF on input line 4172.
+Package hyperref Info: Hyper index ON on input line 4175.
+Package hyperref Info: Plain pages OFF on input line 4182.
+Package hyperref Info: Backreferencing OFF on input line 4187.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4425.
+Package hyperref Info: Bookmarks ON on input line 4434.
 \c@Hy@tempcnt=\count348
 (/usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen289
+LaTeX Info: Redefining \url on input line 4772.
+\XeTeXLinkMargin=\dimen287
 (/usr/local/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (/usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count349
-\Field@Width=\dimen290
-\Fld@charsize=\dimen291
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
+\Field@Width=\dimen288
+\Fld@charsize=\dimen289
+Package hyperref Info: Hyper figures OFF on input line 6051.
+Package hyperref Info: Link nesting OFF on input line 6056.
+Package hyperref Info: Hyper index ON on input line 6059.
+Package hyperref Info: backreferencing OFF on input line 6066.
+Package hyperref Info: Link coloring OFF on input line 6071.
+Package hyperref Info: Link coloring with OCG OFF on input line 6076.
+Package hyperref Info: PDF/A mode OFF on input line 6081.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
@@ -1321,7 +1318,7 @@ package with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hluatex.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hluatex.def
-File: hluatex.def 2023-02-07 v7.00v Hyperref driver for luaTeX
+File: hluatex.def 2023-07-08 v7.01b Hyperref driver for luaTeX
 (/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -1345,22 +1342,22 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 329.
 Package hyperref Info: Option `colorlinks' set `false' on input line 329.
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count355
-\lst@gtempboxa=\box132
-\lst@token=\toks49
+\lst@gtempboxa=\box133
+\lst@token=\toks50
 \lst@length=\count356
-\lst@currlwidth=\dimen292
+\lst@currlwidth=\dimen290
 \lst@column=\count357
 \lst@pos=\count358
-\lst@lostspace=\dimen293
-\lst@width=\dimen294
+\lst@lostspace=\dimen291
+\lst@width=\dimen292
 \lst@newlines=\count359
 \lst@lineno=\count360
-\lst@maxwidth=\dimen295
+\lst@maxwidth=\dimen293
 (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 \c@lstnumber=\count361
 \lst@skipnumbers=\count362
-\lst@framebox=\box133
+\lst@framebox=\box134
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
@@ -1369,11 +1366,11 @@ Package: listings 2023/02/27 1.9 (Carsten Heinz)
 Package: luatexbase-cctb 2015/10/04 v1.3 luatexbase interface to LuaTeX (legacy subpackage) 
 )
 \ltj@lst@japanese@min=\count363
-\CatcodeTableLTJlistings=\catcodetable15
-\ltj@lst@frame@lslimit=\dimen296
+\CatcodeTableLTJlistings=\catcodetable17
+\ltj@lst@frame@lslimit=\dimen294
 (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\lst@WFtoken=\toks50
+\lst@WFtoken=\toks51
 \lst@WF=\write4
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
@@ -1395,6 +1392,10 @@ File: lstlang2.sty 2023/02/27 1.9 listings language file
 File: lstlang3.sty 2023/02/27 1.9 listings language file
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+) (/usr/local/texlive/2023/texmf-dist/tex/lualatex/luacode/luacode.sty
+Package: luacode 2012/01/23 v1.2a lua-in-tex helpers (mpg)
+\luacode@lines=\toks52
+\luacode@table@soft=\catcodetable18
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/logreq/logreq.sty
@@ -1611,13 +1612,13 @@ Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2023-03-30 L3 programming layer (loader) 
+(biblatex)             2023-08-29 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-Package biblatex Info: Redefining '\supercite' on input line 67.
+Package biblatex Info: Redefining '\supercite' on input line 71.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tipa/tipa.sty
 Package: tipa 2002/08/08 TIPA version 1.1
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
@@ -1643,7 +1644,7 @@ Package: bxtexlogo 2022/05/05 v0.6
 (/usr/local/texlive/2023/texmf-dist/tex/generic/hologo/hologo.sty
 Package: hologo 2021-11-16 v1.15 A logo collection with bookmark support (HO)
 )
-\bxlg@g@height=\dimen297
+\bxlg@g@height=\dimen295
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/layout.sty
 Package: layout 2021-03-10 v1.2e Show layout parameters
 \oneinch=\count490
@@ -1678,21 +1679,21 @@ Package: layout 2021-03-10 v1.2e Show layout parameters
 \PositionY=\count519
 \ArrowLength=\count520
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/footmisc/footmisc.sty
-Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
-\FN@temptoken=\toks51
-\footnotemargin=\dimen298
-\@outputbox@depth=\dimen299
+Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
+\FN@temptoken=\toks53
+\footnotemargin=\dimen296
+\@outputbox@depth=\dimen297
 (/usr/local/texlive/2023/texmf-dist/tex/latex/bigfoot/perpage.sty
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
 \c@abspage=\count521
 )
 \c@pp@a@footnote=\count522
-Package footmisc Info: Declaring symbol style bringhurst on input line 695.
-Package footmisc Info: Declaring symbol style chicago on input line 703.
-Package footmisc Info: Declaring symbol style wiley on input line 712.
-Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
-Package footmisc Info: Declaring symbol style lamport* on input line 743.
-Package footmisc Info: Declaring symbol style lamport*-robust on input line 764.
+Package footmisc Info: Declaring symbol style bringhurst on input line 696.
+Package footmisc Info: Declaring symbol style chicago on input line 704.
+Package footmisc Info: Declaring symbol style wiley on input line 713.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 724.
+Package footmisc Info: Declaring symbol style lamport* on input line 744.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 765.
 ) (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjp-footmisc.sty
 Package: lltjp-footmisc 2022-02-19 Patch to footmisc for LuaTeX-ja
 ) (/usr/local/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjp-tascmac.sty
@@ -1704,43 +1705,47 @@ Package: lltjp-array 2019-07-18 Patch to array for LuaTeX-ja
 )
 \@quotelevel=\count523
 \@quotereset=\count524
+
+LaTeX Warning: Unused global option(s):
+    [4paper].
+
 (/Users/hbk-asakr/Folders/tmp/TeX_explanatory/builds/main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
-LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 118.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
+LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 122.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 118.
-LaTeX Font Info:    Trying loading font information for T3+cmr on input line 118.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 122.
+LaTeX Font Info:    Trying loading font information for T3+cmr on input line 122.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    ... okay on input line 122.
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
@@ -1783,71 +1788,71 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 118.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 118.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 118.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 118.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 118.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 118.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 118.
-LaTeX Font Info:    Redeclaring math accent \check on input line 118.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 118.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 118.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 118.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 118.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 118.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 122.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 122.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 122.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 122.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 122.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 122.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 122.
+LaTeX Font Info:    Redeclaring math accent \check on input line 122.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 122.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 122.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 122.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 122.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 118.
+(Font)              `operators' in the math version `normal' on input line 122.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermes(0)/m/n on input line 118.
+(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermes(0)/m/n on input line 122.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 118.
+(Font)              `operators' in the math version `bold' on input line 122.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/m/n on input line 118.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/m/n on input line 122.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/m/n on input line 118.
+(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/m/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TeXGyreTermes(0)/m/it on input line 118.
+(Font)                  OT1/cmr/m/it --> TU/TeXGyreTermes(0)/m/it on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/b/n on input line 118.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/b/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Verdana(0)/m/n on input line 118.
+(Font)                  OT1/cmss/m/n --> TU/Verdana(0)/m/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/NewComputerModernMono10-Book(0)/m/n on input line 118.
+(Font)                  OT1/cmtt/m/n --> TU/NewComputerModernMono10-Book(0)/m/n on input line 122.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/b/n on input line 118.
+(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/b/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermes(0)/b/it on input line 118.
+(Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermes(0)/b/it on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Verdana(0)/b/n on input line 118.
+(Font)                  OT1/cmss/bx/n --> TU/Verdana(0)/b/n on input line 122.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/NewComputerModernMono10-Book(0)/b/n on input line 118.
+(Font)                  OT1/cmtt/m/n --> TU/NewComputerModernMono10-Book(0)/b/n on input line 122.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 ) (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count525
-\scratchdimen=\dimen300
-\scratchbox=\box134
+\scratchdimen=\dimen298
+\scratchbox=\box135
 \nofMPsegments=\count526
 \nofMParguments=\count527
-\everyMPshowfont=\toks52
+\everyMPshowfont=\toks54
 \MPscratchCnt=\count528
-\MPscratchDim=\dimen301
+\MPscratchDim=\dimen299
 \MPnumerator=\count529
 \makeMPintoPDFobject=\count530
-\everyMPtoPDFconversion=\toks53
+\everyMPtoPDFconversion=\toks55
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1858,7 +1863,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 118.
+Package hyperref Info: Link coloring OFF on input line 122.
 (/Users/hbk-asakr/Folders/tmp/TeX_explanatory/builds/main.out) (/Users/hbk-asakr/Folders/tmp/TeX_explanatory/builds/main.out)
 \@outlinefile=\write6
 
@@ -1877,9 +1882,80 @@ Package biblatex Info: Data encoding 'utf8style' specified.
 \openout5 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-(/Users/hbk-asakr/Folders/tmp/TeX_explanatory/builds/main.bbl)
-Package biblatex Info: Reference section=0 on input line 118.
-Package biblatex Info: Reference segment=0 on input line 118.
+(/Users/hbk-asakr/Folders/tmp/TeX_explanatory/builds/main.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'documentclass_list':
+(biblatex)                - online entry 'documentclass_list' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'jscls_doc':
+(biblatex)                - article entry 'jscls_doc' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'LaTeX_are':
+(biblatex)                - online entry 'LaTeX_are' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Req4JapTex':
+(biblatex)                - online entry 'Req4JapTex' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'JIS_X_4051':
+(biblatex)                - online entry 'JIS_X_4051' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'pLaTeX_pinch':
+(biblatex)                - online entry 'pLaTeX_pinch' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Lua_Wikipedia':
+(biblatex)                - online entry 'Lua_Wikipedia' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Lua_intro':
+(biblatex)                - online entry 'Lua_intro' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Luaコツ':
+(biblatex)                - online entry 'Luaコツ' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'プログラミングwtTeX':
+(biblatex)                - online entry 'プログラミングwtTeX' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'pattern_syn_lua':
+(biblatex)                - online entry 'pattern_syn_lua' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Lua_challenge':
+(biblatex)                - online entry 'Lua_challenge' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'layout_doc':
+(biblatex)                - article entry 'layout_doc' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'spacing_in_LaTeX':
+(biblatex)                - online entry 'spacing_in_LaTeX' (../ref.bib): Invalid format '2023-9-16' of date field 'urldate' - ignoring.
+
+)
+Package biblatex Info: Reference section=0 on input line 122.
+Package biblatex Info: Reference segment=0 on input line 122.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: a4paper
@@ -1913,59 +1989,59 @@ Package biblatex Info: Reference segment=0 on input line 118.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `JT3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 122.
+(Font)              scaled to size 19.17854pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 122.
+(Font)              scaled to size 19.17854pt on input line 126.
 LaTeX Font Info:    Font shape `JT3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 122.
+(Font)              scaled to size 13.31586pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 122.
+(Font)              scaled to size 13.31586pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 122.
+(Font)              scaled to size 6.47299pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/b/n' will be
-(Font)              scaled to size 13.31586pt on input line 122.
+(Font)              scaled to size 13.31586pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/b/n' will be
-(Font)              scaled to size 6.47299pt on input line 122.
+(Font)              scaled to size 6.47299pt on input line 126.
 LaTeX Font Info:    Font shape `JT3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 122.
+(Font)              scaled to size 11.09656pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 122.
+(Font)              scaled to size 11.09656pt on input line 126.
 LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 122.
+(Font)              No change on input line 126.
 LaTeX Font Info:    Font shape `JT3/HiraginoKakuGothicProW3(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 122.
+(Font)              scaled to size 11.09656pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraginoKakuGothicProW3(0)/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 122.
+(Font)              scaled to size 11.09656pt on input line 126.
 LaTeX Font Info:    Font shape `JT3/HiraMinPro-W3(0)/b/n' will be
-(Font)              scaled to size 11.09656pt on input line 122.
+(Font)              scaled to size 11.09656pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/b/n' will be
-(Font)              scaled to size 11.09656pt on input line 122.
+(Font)              scaled to size 11.09656pt on input line 126.
 LaTeX Font Info:    Font shape `JT3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 122.
+(Font)              scaled to size 15.97903pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 122.
+(Font)              scaled to size 15.97903pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/b/n' will be
-(Font)              scaled to size 15.97903pt on input line 122.
+(Font)              scaled to size 15.97903pt on input line 126.
 LaTeX Font Info:    Font shape `JT3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 122.
+(Font)              scaled to size 7.3977pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 122.
+(Font)              scaled to size 7.3977pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 122.
+(Font)              scaled to size 5.54828pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 122.
+(Font)              scaled to size 4.62357pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/b/n' will be
-(Font)              scaled to size 7.3977pt on input line 122.
+(Font)              scaled to size 7.3977pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/b/n' will be
-(Font)              scaled to size 5.54828pt on input line 122.
+(Font)              scaled to size 5.54828pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/b/n' will be
-(Font)              scaled to size 4.62357pt on input line 122.
+(Font)              scaled to size 4.62357pt on input line 126.
 LaTeX Font Info:    Font shape `JT3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 122.
+(Font)              scaled to size 5.54828pt on input line 126.
 LaTeX Font Info:    Font shape `JT3/HiraginoKakuGothicProW3(0)/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 122.
+(Font)              scaled to size 7.3977pt on input line 126.
 LaTeX Font Info:    Font shape `JY3/HiraginoKakuGothicProW3(0)/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 122.
+(Font)              scaled to size 7.3977pt on input line 126.
 (/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-ascii-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 ) [1
@@ -1975,7 +2051,7 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 ]
 LaTeX Font Info:    Font shape `JT3/HiraMinPro-W3(0)/b/n' will be
-(Font)              scaled to size 13.31586pt on input line 128.
+(Font)              scaled to size 13.31586pt on input line 132.
 (/Users/hbk-asakr/Folders/tmp/TeX_explanatory/builds/main.toc
 LaTeX Font Info:    Font shape `JT3/HiraMinPro-W3(0)/m/n' will be
 (Font)              scaled to size 6.47299pt on input line 2.
@@ -2018,146 +2094,216 @@ LaTeX Font Info:    Font shape `JY3/HiraginoKakuGothicProW6(0)/m/n' will be
 ]
 
 LaTeX Font Warning: Font shape `JT3/HiraginoKakuGothicProW6(0)/b/n' undefined
-(Font)              using `JT3/HiraginoKakuGothicProW6(0)/m/n' instead on input line 59.
+(Font)              using `JT3/HiraginoKakuGothicProW6(0)/m/n' instead on input line 60.
 
 LaTeX Font Info:    Font shape `JT3/HiraginoKakuGothicProW6(0)/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 59.
+(Font)              scaled to size 9.24713pt on input line 60.
 
 LaTeX Font Warning: Font shape `JY3/HiraginoKakuGothicProW6(0)/b/n' undefined
-(Font)              using `JY3/HiraginoKakuGothicProW6(0)/m/n' instead on input line 59.
+(Font)              using `JY3/HiraginoKakuGothicProW6(0)/m/n' instead on input line 60.
 
 LaTeX Font Info:    Font shape `JT3/HiraginoKakuGothicProW6(0)/b/n' will be
-(Font)              scaled to size 11.09656pt on input line 59.
+(Font)              scaled to size 11.09656pt on input line 60.
 LaTeX Font Info:    Font shape `JY3/HiraginoKakuGothicProW6(0)/b/n' will be
-(Font)              scaled to size 11.09656pt on input line 59.
+(Font)              scaled to size 11.09656pt on input line 60.
 [4]
-<./../figures/section2//kumo_p_cmpr.pdf, id=168, 125.46875pt x 305.14pt>
-File: ./../figures/section2//kumo_p_cmpr.pdf Graphic file (type pdf)
-<use ./../figures/section2//kumo_p_cmpr.pdf>
-Package luatex.def Info: ./../figures/section2//kumo_p_cmpr.pdf  used on input line 87.
+<./../figures/section2/kumo_p_cmpr.pdf, id=185, 125.46875pt x 305.14pt>
+File: ./../figures/section2/kumo_p_cmpr.pdf Graphic file (type pdf)
+<use ./../figures/section2/kumo_p_cmpr.pdf>
+Package luatex.def Info: ./../figures/section2/kumo_p_cmpr.pdf  used on input line 90.
 (luatex.def)             Requested size: 119.50203pt x 290.64493pt.
-<./../figures/section2//kumo_up_cmpr.pdf, id=169, 125.46875pt x 305.14pt>
-File: ./../figures/section2//kumo_up_cmpr.pdf Graphic file (type pdf)
-<use ./../figures/section2//kumo_up_cmpr.pdf>
-Package luatex.def Info: ./../figures/section2//kumo_up_cmpr.pdf  used on input line 89.
+<./../figures/section2/kumo_up_cmpr.pdf, id=186, 125.46875pt x 305.14pt>
+File: ./../figures/section2/kumo_up_cmpr.pdf Graphic file (type pdf)
+<use ./../figures/section2/kumo_up_cmpr.pdf>
+Package luatex.def Info: ./../figures/section2/kumo_up_cmpr.pdf  used on input line 92.
 (luatex.def)             Requested size: 119.50203pt x 290.64493pt.
 LaTeX Font Info:    Font shape `JT3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 90.
+(Font)              scaled to size 8.32242pt on input line 93.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 90.
+(Font)              scaled to size 8.32242pt on input line 93.
 LaTeX Font Info:    Font shape `JY3/HiraMinPro-W3(0)/b/n' will be
-(Font)              scaled to size 8.32242pt on input line 90.
+(Font)              scaled to size 8.32242pt on input line 93.
+[5<./../figures/section2/kumo_p_cmpr.pdf><./../figures/section2/kumo_up_cmpr.pdf>]
 LaTeX Font Info:    Font shape `JT3/HiraginoKakuGothicProW6(0)/b/n' will be
-(Font)              scaled to size 9.24713pt on input line 94.
+(Font)              scaled to size 9.24713pt on input line 98.
 LaTeX Font Info:    Font shape `JY3/HiraginoKakuGothicProW6(0)/b/n' will be
-(Font)              scaled to size 9.24713pt on input line 94.
+(Font)              scaled to size 9.24713pt on input line 98.
 LaTeX Font Info:    Font shape `JT3/HiraginoKakuGothicProW6(0)/b/n' will be
-(Font)              scaled to size 7.3977pt on input line 94.
+(Font)              scaled to size 7.3977pt on input line 98.
 LaTeX Font Info:    Font shape `JY3/HiraginoKakuGothicProW6(0)/b/n' will be
-(Font)              scaled to size 7.3977pt on input line 94.
-[5<./../figures/section2//kumo_p_cmpr.pdf><./../figures/section2//kumo_up_cmpr.pdf>]
-<./../figures/section2//ConTeXt_code.pdf, id=229, 472.76625pt x 642.4pt>
-File: ./../figures/section2//ConTeXt_code.pdf Graphic file (type pdf)
-<use ./../figures/section2//ConTeXt_code.pdf>
-Package luatex.def Info: ./../figures/section2//ConTeXt_code.pdf  used on input line 112.
+(Font)              scaled to size 7.3977pt on input line 98.
+<./../figures/section2/ConTeXt_code.pdf, id=245, 472.76625pt x 642.4pt>
+File: ./../figures/section2/ConTeXt_code.pdf Graphic file (type pdf)
+<use ./../figures/section2/ConTeXt_code.pdf>
+Package luatex.def Info: ./../figures/section2/ConTeXt_code.pdf  used on input line 117.
 (luatex.def)             Requested size: 191.20032pt x 259.80789pt.
 
-warning  (file ./../figures/section2//ConTeXt_test.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
-<./../figures/section2//ConTeXt_test.pdf, id=230, 614.295pt x 794.96999pt>
-File: ./../figures/section2//ConTeXt_test.pdf Graphic file (type pdf)
-<use ./../figures/section2//ConTeXt_test.pdf>
-Package luatex.def Info: ./../figures/section2//ConTeXt_test.pdf  used on input line 113.
+warning  (file ./../figures/section2/ConTeXt_test.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
+<./../figures/section2/ConTeXt_test.pdf, id=246, 614.295pt x 794.96999pt>
+File: ./../figures/section2/ConTeXt_test.pdf Graphic file (type pdf)
+<use ./../figures/section2/ConTeXt_test.pdf>
+Package luatex.def Info: ./../figures/section2/ConTeXt_test.pdf  used on input line 118.
 (luatex.def)             Requested size: 191.20032pt x 247.43283pt.
-[6<./../figures/section2//ConTeXt_code.pdf><./../figures/section2//ConTeXt_test.pdf>] [7]) (././section3.tex [8] [9] [10]
+[6
+
+<./../figures/section2/ConTeXt_code.pdf><./../figures/section2/ConTeXt_test.pdf>] [7] [8]) (././section3.tex [9] [10] [11]
 LaTeX Font Info:    Font shape `JT3/HiraginoKakuGothicProW3(0)/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 126.
+(Font)              scaled to size 6.47299pt on input line 130.
 LaTeX Font Info:    Font shape `JY3/HiraginoKakuGothicProW3(0)/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 126.
+(Font)              scaled to size 6.47299pt on input line 130.
 Removing  `ltj.process_input_buffer' from `process_input_buffer'.
 Inserting `ltj.listings_unicode' in `process_input_buffer'.
 Inserting `ltj.process_input_buffer' in `process_input_buffer'.
 
 LaTeX Font Warning: Font shape `TU/NewComputerModernMono10-Book(0)/b/n' undefined
-(Font)              using `TU/NewComputerModernMono10-Book(0)/m/n' instead on input line 130.
+(Font)              using `TU/NewComputerModernMono10-Book(0)/m/n' instead on input line 134.
 
 LaTeX Font Info:    Font shape `JT3/HiraginoKakuGothicProW3(0)/b/n' will be
-(Font)              scaled to size 6.47299pt on input line 130.
+(Font)              scaled to size 6.47299pt on input line 134.
 LaTeX Font Info:    Font shape `JY3/HiraginoKakuGothicProW3(0)/b/n' will be
-(Font)              scaled to size 6.47299pt on input line 130.
+(Font)              scaled to size 6.47299pt on input line 134.
 Removing  `ltj.listings_unicode' from `process_input_buffer'.
-<./../figures/section3//odd.pdf, id=387, 67.25125pt x 52.195pt>
-File: ./../figures/section3//odd.pdf Graphic file (type pdf)
-<use ./../figures/section3//odd.pdf>
-Package luatex.def Info: ./../figures/section3//odd.pdf  used on input line 151.
-(luatex.def)             Requested size: 67.25107pt x 52.19487pt.
-<./../figures/section3//odd2.pdf, id=388, 55.20625pt x 52.195pt>
-File: ./../figures/section3//odd2.pdf Graphic file (type pdf)
-<use ./../figures/section3//odd2.pdf>
-Package luatex.def Info: ./../figures/section3//odd2.pdf  used on input line 152.
-(luatex.def)             Requested size: 55.2061pt x 52.19487pt.
-<./../figures/section3//even.pdf, id=389, 67.25125pt x 52.195pt>
-File: ./../figures/section3//even.pdf Graphic file (type pdf)
-<use ./../figures/section3//even.pdf>
-Package luatex.def Info: ./../figures/section3//even.pdf  used on input line 153.
-(luatex.def)             Requested size: 67.25107pt x 52.19487pt.
-<./../figures/section3//even2.pdf, id=390, 50.1875pt x 52.195pt>
-File: ./../figures/section3//even2.pdf Graphic file (type pdf)
-<use ./../figures/section3//even2.pdf>
-Package luatex.def Info: ./../figures/section3//even2.pdf  used on input line 154.
-(luatex.def)             Requested size: 50.18736pt x 52.19487pt.
-[11<./../figures/section3//odd.pdf><./../figures/section3//odd2.pdf><./../figures/section3//even.pdf><./../figures/section3//even2.pdf>]) (././section4.tex [12] [13]) (././section5.tex)
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraginoKakuGothicProW3(0)/m/it' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraginoKakuGothicProW3(0)/m/it' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-[14]
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
-(Font)              No change on input line 148.
-[15] [16
+<./../builds/standalone1.pdf, id=422, page=1, 67.25125pt x 52.195pt>
+File: ./../builds/standalone1.pdf Graphic file (type pdf)
+<use ./../builds/standalone1.pdf, page 1>
+Package luatex.def Info: ./../builds/standalone1.pdf , page1 used on input line 164.
+(luatex.def)             Requested size: 119.50203pt x 92.7491pt.
+<./../builds/standalone_even.pdf, id=423, page=1, 67.25125pt x 52.195pt>
+File: ./../builds/standalone_even.pdf Graphic file (type pdf)
+<use ./../builds/standalone_even.pdf, page 1>
+Package luatex.def Info: ./../builds/standalone_even.pdf , page1 used on input line 166.
+(luatex.def)             Requested size: 119.50203pt x 92.7491pt.
+<./../builds/standalone_odd.pdf, id=424, page=1, 67.25125pt x 52.195pt>
+File: ./../builds/standalone_odd.pdf Graphic file (type pdf)
+<use ./../builds/standalone_odd.pdf, page 1>
+Package luatex.def Info: ./../builds/standalone_odd.pdf , page1 used on input line 168.
+(luatex.def)             Requested size: 119.50203pt x 92.7491pt.
+[12]) (././section4.tex [13<./../builds/standalone1.pdf><./../builds/standalone_even.pdf><./../builds/standalone_odd.pdf>] [14
 
-] (././appendix1.tex) [17] (/Users/hbk-asakr/Folders/tmp/TeX_explanatory/builds/main.lof)
+]) (././section5.tex [15]
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'. [16]
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+<./../builds/lua_example.pdf, id=575, page=1, 614.295pt x 794.97pt>
+File: ./../builds/lua_example.pdf Graphic file (type pdf)
+<use ./../builds/lua_example.pdf, page 1>
+Package luatex.def Info: ./../builds/lua_example.pdf , page1 used on input line 217.
+(luatex.def)             Requested size: 172.07912pt x 222.68712pt.
+
+Overfull \hbox (2.80212pt too wide) in paragraph at lines 271--285
+ [][][][] 
+ []
+
+[17
+
+<./../builds/lua_example.pdf>])
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+[18]
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraginoKakuGothicProW3(0)/m/it' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraginoKakuGothicProW3(0)/m/it' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+[19]
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+[20]
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
+(Font)              No change on input line 152.
+[21] [22
+
+] (././appendix1.tex
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'. [23]
+Removing  `ltj.process_input_buffer' from `process_input_buffer'.
+Inserting `ltj.listings_unicode' in `process_input_buffer'.
+Inserting `ltj.process_input_buffer' in `process_input_buffer'.
+Removing  `ltj.listings_unicode' from `process_input_buffer'.) [24] (/Users/hbk-asakr/Folders/tmp/TeX_explanatory/builds/main.lof)
 \tf@lof=\write8
 
 \openout8 = main.lof
@@ -2169,33 +2315,37 @@ LaTeX Font Info:    Kanji font shape `JY3/HiraMinPro-W3(0)/m/sc' undefined
 Package caption Warning: Unused \captionsetup[subfigure] on input line 237.
 See the caption package documentation for explanation.
 
-[18] (/Users/hbk-asakr/Folders/tmp/TeX_explanatory/builds/main.aux)
+[25] (/Users/hbk-asakr/Folders/tmp/TeX_explanatory/builds/main.aux)
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+ ***********
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B8508F46F5E9ABEFF0D11E04DAACE38E;2105.
+(rerunfilecheck)             Checksum: FA074713F699174420CB9594763A20AD;2391.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 37311 strings out of 478278
- 244629,1977958 words of node,token memory allocated
- 2779 words of node memory still in use:
-   11 hlist, 2 vlist, 5 rule, 16 glue, 4 kern, 1 glyph, 766 attribute, 117 glue_spec, 82 attribute_list, 1 write, 14 user_defined, 12 pdf_action nodes
-   avail lists: 1:49,2:60442,3:653,4:3636,5:1089,6:112,7:6411,8:126,9:4487,10:35,11:202
- 55819 multiletter control sequences out of 65536+600000
- 235 fonts using 257183839 bytes
- 123i,14n,141p,1825b,2008s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 36857 strings out of 477259
+ 597261,1977958 words of node,token memory allocated
+ 4802 words of node memory still in use:
+   11 hlist, 2 vlist, 5 rule, 17 glue, 4 kern, 1 glyph, 1668 attribute, 117 glue_spec, 164 attribute_list, 1 write, 14 user_defined, 20 pdf_action nodes
+   avail lists: 1:48,2:105568,3:808,4:15771,5:3963,6:143,7:10173,8:126,9:15419,10:38,11:618
+ 56948 multiletter control sequences out of 65536+600000
+ 236 fonts using 257258559 bytes
+ 130i,16n,141p,1825b,2380s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
-</System/Library/Fonts/ヒラギノ角ゴシック W3.ttc></System/Library/Fonts/ヒラギノ角ゴシック W3.ttc></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-italic.otf></System/Library/Fonts/ヒラギノ角ゴシック W6.ttc></System/Library/Fonts/ヒラギノ角ゴシック W6.ttc></System/Library/Fonts/Supplemental/AmericanTypewriter.ttc></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/newcomputermodern/NewCMMono10-Book.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-bold.otf></System/Library/Fonts/Supplemental/Verdana.ttf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-regular.otf></Users/hbk-asakr/Library/Fonts/3270Narrow.ttf></System/Library/Fonts/ヒラギノ明朝 ProN.ttc></System/Library/Fonts/ヒラギノ明朝 ProN.ttc></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tipa/tipa10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tipa/tipa8.pfb>
-Output written on main.pdf (20 pages, 669504 bytes).
+</System/Library/Fonts/ヒラギノ角ゴシック W3.ttc></System/Library/Fonts/ヒラギノ角ゴシック W3.ttc></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-italic.otf></System/Library/Fonts/ヒラギノ角ゴシック W6.ttc></System/Library/Fonts/ヒラギノ角ゴシック W6.ttc></System/Library/Fonts/Supplemental/AmericanTypewriter.ttc></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/newcomputermodern/NewCMMono10-Book.otf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-bold.otf></System/Library/Fonts/Supplemental/Verdana.ttf></usr/local/texlive/2023/texmf-dist/fonts/opentype/public/tex-gyre/texgyretermes-regular.otf></Users/hbk-asakr/Library/Fonts/3270Narrow.ttf></System/Library/Fonts/ヒラギノ明朝 ProN.ttc></System/Library/Fonts/ヒラギノ明朝 ProN.ttc></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tipa/tipa10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tipa/tipa8.pfb>
+Output written on main.pdf (27 pages, 710365 bytes).
 
-PDF statistics: 665 PDF objects out of 1000 (max. 8388607)
- 521 compressed objects within 6 object streams
- 100 named destinations out of 1000 (max. 131072)
- 113 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 944 PDF objects out of 1000 (max. 8388607)
+ 782 compressed objects within 8 object streams
+ 250 named destinations out of 1000 (max. 131072)
+ 129 words of extra memory for PDF output out of 10000 (max. 100000000)
 

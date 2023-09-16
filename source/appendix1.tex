@@ -35,26 +35,134 @@
 
 \markboth{\appendixname}{}
 
-\subsection{ぼくがかんがえたさいきょうのてふかんきょう}
-\noindent
-タイトルのとおりである．
-僕の考える最強であって，実際の最強ではないし，日々ぼくのなかのさいきょうはこうしんされつづける！
-さらに言えば，ここは特に丁寧に説明する気もないので，個別の環境や目的ごとに場合分けをしていない．
-書いてあることをそのままコピペではなく，慎重に行うことをすすめる．
+\subsection{はじめてのらてふかんきょうづくり}
 
-\subsubsection{distribution}
 \begin{itemize}
-  \item Windows: 知らない
-  \item MacOS: Homebrew を使う．知らない人は知らない．\TeX Shopとかはいらないからついてない方．
+  \item Windows（要検証）
+  \begin{enumerate}
+    \item TeX Liveのページ（\url{https://www.tug.org/texlive/acquire-netinstall.html}）から\verb|install-tl-windows.exe|をダウンロード．
+    \item ダウンロードしたファイルを実行．のち，待ち．
+  \end{enumerate}
+  \item Mac
+  \begin{enumerate}
+    \item Homebrewをダウンロード．\\
+    \vspace{-10pt}
+    \begin{verbatim}
+/bin/bash -c "$(curl -fsSL 
+          https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    \end{verbatim}
+    \vspace{-10pt}
+    \item MacTeXをインストール．のち，待ち．\\
+    \vspace{-10pt}
+    \begin{verbatim}
+brew install --cask mactex-no-gui
+sudo tlmgr update --self --all
+sudo tlmgr paper a4
+    \end{verbatim}
+    \vspace{-10pt}
+  \end{enumerate}
 \end{itemize}
-\subsubsection{確認と準備}
-\TeX のインストールが上手く行かない話はよくあるが，最後までやってから何かでテストしようとするのが良くないと思う．
-当たり前だがこの時点でコンパイルはできるのでとりあえずやってみるべし．
-\subsubsection{latexmkrc}
-本来的には，文書ごとにどの\LaTeX を使っているか意識するのがよいのだが，取りあえず何でも使えるやつをつくる．
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  \item ここで一旦確認．例えば\quad
+  \begin{minipage}[t]{0.2\linewidth}
+    \verb|main.tex|
+    \begin{lstlisting}[numbers=none,linewidth=\linewidth]
+\documentclass{article}
+\begin{document}
+	Hello, \LaTeX!
+\end{document}      
+    \end{lstlisting}
+  \end{minipage}
+  を作って，コンパイル：\quad
+  \begin{minipage}[t]{0.2\linewidth}
+    \begin{verbatim}
+latex main.tex
+dvipdfmx main.dvi
+open main.pdf
+    \end{verbatim}
+  \end{minipage}
+  \item \LuaLaTeX も確認．
+  \verb|lualatex|\quad
+  \begin{minipage}[t]{0.45\linewidth}
+    \verb|main_lua.tex|\quad
+    \begin{lstlisting}[numbers=none,linewidth=\linewidth]
+\documentclass[a4paper,lualatex,ja=standard]{bxjsarticle}
+\begin{document}
+  Hello, \LaTeX! こんにちは，\LaTeX!
+\end{document}      
+    \end{lstlisting}
+  \end{minipage}
+  \item \verb|latexmk|を使うための設定ファイル\verb|latexmkrc|を作成．\LuaLaTeX なら以下．\\
+  \begin{figure}[h]
+  \centering
+  \begin{minipage}{0.65\linewidth}
+  \begin{lstlisting}[commentstyle={\color[rgb]{0,0,0}},]
+#!/usr/bin/env perl
+$latex     = 'uplatex  %O -synctex=1 -file-line-error -halt-on-error %S';
+$pdflatex  = 'pdflatex %O -synctex=1 -file-line-error -halt-on-error %S';
+$lualatex  = 'lualatex %O -synctex=1 -file-line-error -halt-on-error %S';
+$xelatex   = 'xelatex  %O -synctex=1 -file-line-error -halt-on-error %S';
+$biber     = 'biber    %O --bblencoding=utf8 -u -U --output_safechars %B';
+$bibtex    = 'upbibtex %O %B';
+$dvipdf    = 'dvipdfmx %O -o %D %S';
+$pdf_mode  = 4; # or 3 (for upLaTeX)
+  \end{lstlisting}
+\end{minipage}
+\end{figure}
+  \upLaTeX なら9行目の\verb|pdf_mode|を$3$にする．
+  \item もっかい確認．\verb|latexmk main.tex|でコンパイル．\verb|main.tex|には相互参照や文献参照を追加してもいい．
+  \LuaLaTeX なら\verb|latexmk -lualatex main_lua.tex|
+  \item Visual Studio Codeをインストール．
+  \item VSCodeで拡張機能LaTeX Workshopをインストール．
+  \item VSCodeでコマンドパレットから\verb|settings.json|を開き，以下を追加する：
+  \begin{figure}[h]
+    \centering
+    \begin{minipage}{0.3\linewidth}
+    \begin{lstlisting}[commentstyle={\color[rgb]{0,0,0}},]
+"latex-workshop.latex.recipes": [
+  {
+      "name": "latexmk",
+      "tools": [
+          "latexmk_tool"
+      ]
+  },
+],
+"latex-workshop.latex.tools": [
+  {
+      "name": "latexmk_tool",
+      "command": "latexmk",
+      "args": [
+          "-outdir=%OUTDIR%",
+          "%DOC%"
+      ],
+  },
+],
+    \end{lstlisting}
+  \end{minipage}
+  \end{figure}
+  \item 最後の確認．VSCodeで\verb|main.tex|を開き，コマンドパレットから\verb|Build LaTeX project|を実行．
+\end{enumerate}
 
-ここでも一応\verb|latexmk|が思い通りに動くか確認しておこう．
-\subsubsection{Visual Studio Code (LaTeX Workshop)}
+これでとりあえず\upLaTeX でも\LuaLaTeX でもその他のなにかでも動く！はず（\verb|latexmkrc|は文書に合わせて適宜変える必要あり）．
+
+高尾湖から先はすべて個人の好みである．例えば
+\begin{itemize}
+  \item VSCodeの設定ファイル\verb|settings.json|の\verb|recipes|と\verb|tools|は好きなように組合せて作れるため，
+  \begin{itemize}
+    \item ログファイルを出力しないようにする
+    \item \LuaLaTeX\ $+$ \verb|latexmk|
+    \item \upLaTeX\ $+$ \verb|latexmk|
+    \item \upLaTeX\ $+$ \upBibTeX\ $+$ \upLaTeX $\times2$ $+$ \verb|dvipdfmx|
+  \end{itemize}
+  とかを用意しておき，適宜ショートカットで切り替えながら使う．
+  \item 出力を別フォルダにすることで，中間ファイルでフォルダがごちゃごちゃするのを抑制する．
+  \item 保存するたびに自動でコンパイルさせる．
+  \item 出力PDFの表示をVSCodeのプレビューで行う．もしくは外部アプリで行う．
+\end{itemize}
+などなど色々工夫ができる．
+
+
 
 
 
