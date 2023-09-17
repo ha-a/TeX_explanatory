@@ -115,11 +115,11 @@ Luaは，高速な動作と高い移植性，組み込みの容易さが特徴�
 他にも引数を持つ自作関数を\verb|\newcommand|でつくると，本文中で\verb|\sumSquare{}{}|と書く度に，引数の小さい方から大きい方までの整数二条和を計算させられる．
 \begin{figure}[h]
 \centering
-\begin{minipage}{0.45\linewidth}
-  \begin{lstlisting}[linewidth=0.7\linewidth]
+\begin{minipage}{0.35\linewidth}
+  \begin{lstlisting}[emph={\\sumSquare,sumSquareFunc}]
 \newcommand{\sumSquare}[2]{%
   \directlua{
-    function sum_square(x,y)
+    function sumSquareFunc(x,y)
       if x > y then
         x, y = y, x
       end
@@ -129,10 +129,10 @@ Luaは，高速な動作と高い移植性，組み込みの容易さが特徴�
       end
       tex.sprint(math.floor(s))
     end
-  }
-  \directlua{ sum_square(#1,#2) }%
+  }%
+  \directlua{ sumSquareFunc(#1,#2) }%
 }
-  \end{lstlisting}
+\end{lstlisting}
 \end{minipage}
 \begin{minipage}{0.45\linewidth}
   \centering\begin{tabular}{ll}
@@ -147,12 +147,12 @@ Luaは，高速な動作と高い移植性，組み込みの容易さが特徴�
 もし間違えて猫を犬にしてしまったときは，以下の自作関数\verb|\displace|を用いて，\verb|\displace{dog}{cat}{dog cat dog cat}|と書けば，``dog cat dog cat''を``\displace{dog}{cat}{dog cat dog cat}''と猫だらけにできる．
 \begin{figure}[htbp]
 \centering
-\begin{minipage}{0.6\linewidth}
+\begin{minipage}{0.65\linewidth}
   \centering
   \vspace{-3pt}
-  \begin{lstlisting}
+  \begin{lstlisting}[emph={\\displace,myDisplace}]
 \begin{luacode*}
-  function my_displace(str_before, str_after, sentence)
+  function myDisplace(str_before, str_after, sentence)
     local sentence_after = ""
     local l = #str_before - 1
     local i = 0
@@ -161,7 +161,7 @@ Luaは，高速な動作と高い移植性，組み込みの容易さが特徴�
         sentence_after = sentence_after .. str_after
         i = i + l
       else
-        sentence_after = sentence_after .. string.sub(sentence, i, i)
+        sentence_after = sentence_after .. string.sub(sentence,i,i)
       end
       i = i + 1
       if i > #sentence then break end
@@ -169,8 +169,8 @@ Luaは，高速な動作と高い移植性，組み込みの容易さが特徴�
     tex.sprint(sentence_after)
   end
 \end{luacode*}
-\newcommand{\displace}[3]{ \directlua{ my_displace("#1","#2","#3") } }
-  \end{lstlisting}
+\newcommand{\displace}[3]{ \directlua{myDisplace("#1","#2","#3")} }
+\end{lstlisting}
 \end{minipage}
 \end{figure}
 
@@ -179,17 +179,16 @@ Luaは，高速な動作と高い移植性，組み込みの容易さが特徴�
 \LuaLaTeX はLuaを\LaTeX と絡めて使えるため，文書の様式・組版を変えることもできる．
 
 \begin{figure}[htbp]
-\begin{minipage}{0.55\linewidth}
-  \begin{lstlisting}
+\begin{minipage}{0.6\linewidth}
+\begin{lstlisting}[emph={vibrateLine}]
 \documentclass[twocolumn]{article}
 \usepackage{lipsum}
 \usepackage{luacode}
 \setlength{\columnsep}{1cm}
 \pagestyle{empty}
-\usepackage[top=0cm,bottom=0cm,left=15truemm,right=0truemm]{geometry}
 
 \begin{luacode*}
-vibrate_line = function (head, group, size)
+vibrateLine = function (head, group, size)
   i = 1.5
   for list in node.traverse(head) do
     i = i + 0.13
@@ -203,18 +202,18 @@ end
 \end{luacode*}
 
 \directlua{%
-  luatexbase.add_to_callback('vpack_filter', vibrate_line, "strict")%
+  luatexbase.add_to_callback('vpack_filter',vibrateLine,"strict")%
 }
 
 \begin{document}
   \lipsum[1-10]
 \end{document}
-  \end{lstlisting}
+\end{lstlisting}
 \end{minipage}
 \hfill
-\begin{minipage}{0.4\linewidth}
+\begin{minipage}{0.35\linewidth}
   \centering
-  \includegraphics[width=0.9\linewidth, page=1]{../builds/lua_example.pdf}
+  \includegraphics[width=\linewidth, page=1]{lua_example.pdf}
 \end{minipage}
 \caption{Example of Lua coding\supercite{プログラミングwtTeX}}
 \label{fig:lua_ex}

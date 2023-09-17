@@ -65,14 +65,14 @@ sudo tlmgr paper a4
 \begin{enumerate}
   \setcounter{enumi}{2}
   \item ここで一旦確認．例えば\quad
-  \begin{minipage}[t]{0.2\linewidth}
+  \begin{minipage}[t]{0.25\linewidth}
     \verb|main.tex|
-    \begin{lstlisting}[numbers=none,linewidth=\linewidth]
+    \begin{lstlisting}[numbers=none]
 \documentclass{article}
 \begin{document}
 	Hello, \LaTeX!
 \end{document}      
-    \end{lstlisting}
+\end{lstlisting}
   \end{minipage}
   を作って，コンパイル：\quad
   \begin{minipage}[t]{0.2\linewidth}
@@ -84,14 +84,14 @@ open main.pdf
   \end{minipage}
   \item \LuaLaTeX も確認．
   \verb|lualatex|\quad
-  \begin{minipage}[t]{0.45\linewidth}
+  \begin{minipage}[t]{0.55\linewidth}
     \verb|main_lua.tex|\quad
     \begin{lstlisting}[numbers=none,linewidth=\linewidth]
 \documentclass[a4paper,lualatex,ja=standard]{bxjsarticle}
 \begin{document}
   Hello, \LaTeX! こんにちは，\LaTeX!
 \end{document}      
-    \end{lstlisting}
+\end{lstlisting}
   \end{minipage}
   \item \verb|latexmk|を使うための設定ファイル\verb|latexmkrc|を作成．\LuaLaTeX なら以下．\\
   \begin{figure}[h]
@@ -107,12 +107,11 @@ $biber     = 'biber    %O --bblencoding=utf8 -u -U --output_safechars %B';
 $bibtex    = 'upbibtex %O %B';
 $dvipdf    = 'dvipdfmx %O -o %D %S';
 $pdf_mode  = 4; # or 3 (for upLaTeX)
-  \end{lstlisting}
+\end{lstlisting}
 \end{minipage}
 \end{figure}
   \upLaTeX なら9行目の\verb|pdf_mode|を$3$にする．
-  \item もっかい確認．\verb|latexmk main.tex|でコンパイル．\verb|main.tex|には相互参照や文献参照を追加してもいい．
-  \LuaLaTeX なら\verb|latexmk -lualatex main_lua.tex|
+  \item もっかい確認．\verb|latexmk main.tex|でコンパイル．\verb|main.tex|には相互参照や文献参照を追加してもいい．\verb|pdf_mode|には注意．
   \item Visual Studio Codeをインストール．
   \item VSCodeで拡張機能LaTeX Workshopをインストール．
   \item VSCodeでコマンドパレットから\verb|settings.json|を開き，以下を追加する：
@@ -138,29 +137,83 @@ $pdf_mode  = 4; # or 3 (for upLaTeX)
       ],
   },
 ],
-    \end{lstlisting}
+\end{lstlisting}
   \end{minipage}
   \end{figure}
   \item 最後の確認．VSCodeで\verb|main.tex|を開き，コマンドパレットから\verb|Build LaTeX project|を実行．
 \end{enumerate}
 
-これでとりあえず\upLaTeX でも\LuaLaTeX でもその他のなにかでも動く！はず（\verb|latexmkrc|は文書に合わせて適宜変える必要あり）．
+これでとりあえず\upLaTeX でも\LuaLaTeX でもその他のなにかでもローカル環境で動く！はず（\verb|latexmkrc|は文書に合わせて適宜変える必要あり）．
 
-高尾湖から先はすべて個人の好みである．例えば
+
+ここから先はすべて個人の好みである．例えば
 \begin{itemize}
   \item VSCodeの設定ファイル\verb|settings.json|の\verb|recipes|と\verb|tools|は好きなように組合せて作れるため，
   \begin{itemize}
-    \item ログファイルを出力しないようにする
+    \item ログファイルを出力しないようにする（高速）
     \item \LuaLaTeX\ $+$ \verb|latexmk|
     \item \upLaTeX\ $+$ \verb|latexmk|
     \item \upLaTeX\ $+$ \upBibTeX\ $+$ \upLaTeX $\times2$ $+$ \verb|dvipdfmx|
   \end{itemize}
   とかを用意しておき，適宜ショートカットで切り替えながら使う．
+  \item \verb|latexmk|でコンパイルが終わるたび，中間ファイルを全消去する．
   \item 出力を別フォルダにすることで，中間ファイルでフォルダがごちゃごちゃするのを抑制する．
   \item 保存するたびに自動でコンパイルさせる．
   \item 出力PDFの表示をVSCodeのプレビューで行う．もしくは外部アプリで行う．
 \end{itemize}
 などなど色々工夫ができる．
+
+
+\subsection{なぜ\LaTeX なのか}
+これまでずっと\LaTeX を使う人に向けて，その説明をしてきた．
+では，そもそも\LaTeX を使う理由はあるのか．
+
+よく\LaTeX を使うと数式が綺麗と言われる．
+一昔前までは実際そうだったのであろう．
+しかし，実際「美しさ」ではもはやほとんど差がないことが多い．
+というのも，以前X，もといTwitterで「LaTeXで作った数式」「Wordで作った数式」「WordでLaTeXに似るように作った数式」の3つを見分けるポストがあり，私はまんまと外した（名誉のために言っておくと，この文を書いているときに再挑戦したらきちんと正解した）．
+このポストの「これはLaTeX」のアンケートの結果も「WordでLaTeXに似るように作った数式」が半数以上の票で1位だった．
+つまり，似せようと思えば，ほとんどの人が気にならないくらいにはWordでも綺麗に数式を作れるのである．
+
+では，なぜ\LaTeX を使うのか．
+
+私は結局「美しさと一貫性」だと思っている．
+数式に限らず，文書全体の綺麗さが\LaTeX にはある．
+例えば，2段組みはきちんと半分ずつか．3段組みは正確に3分割か．
+横並びの2つの図はきちんと対称に並んでいるか．
+横幅が違う2つの図を同じ縮小率で並べられるか．
+キャプションとの距離感は適切か．
+相互参照は正確に更新されているか．
+箇条書きのスタイルは全ページで同じか．
+フォントはどうか．
+スライドのスタイルは統一されているか．
+余白は同じか．
+前ページと同じブロックの位置はズレていないか．
+これらはすべて，Wordでも気をつけていれば実現できることであろう．
+しかしたくさんの資料を作らなくてはならなかったり，長大な文を書く時にこれらをすべて気にすることはできるだろうか．
+こういった部分がデフォルトである程度綺麗な\LaTeX を用いる大きな魅力だと感じる．
+
+デフォルトで綺麗というのは，特に複数人での作業のときそのメリットが現れるだろう．
+一人で凝るのであれば，自分が気をつければいい．
+しかし，複数人で一つの文書を作成するとき，統一感を持って美しく成り立たせるためには相当な労力が必要であろう．
+さらに，予稿集のように各人が提出したものを一つにまとめる場合，確実に統一性を持たせるには一体どれだけのルールが必要だろうか．
+ページサイズ，余白，日英のフォントとサイズを本文・タイトル・著者名・見出しなどなどすべて指定し，同じだけ行間の指定も必要である．
+雛形を配布したとして，図表の位置や見出し・キャプションと本文との距離感はどうだろうか．
+これらの注意をすべての人が完璧に守れるだろうか．
+こういった複数人での作業において，\LaTeX の真価が発揮される．
+デフォルトで十分綺麗がゆえ，もしくはスタイルファイルを配ってしまえば（詳しい人以外は）いじろうにもいじることはできないため，統一感を持たせることができる．
+統一感のおかげで読み手の注意を無駄に損なわないことは無視できない効果があるだろう．
+
+もう一つ\LaTeX を用いるメリットを挙げるなら，それは文書の構造を意識できることである．
+（頑張れば）\verb|\section|などを用いずにまったく同じ見た目の文書は作成できる．
+しかしそうではなく，\verb|\section|などのコマンドや\verb|\begin{itemize}|のような環境が用意されている，というのはユーザに「ここで節を分けるんだ」「ここで並列にものを並べるのがいい」と意識しながら書くことを促す．
+書き手が文書の構造をしっかり理解していることは，「文書の中身の一貫性」にもつながると思う．
+結局\LaTeX の良さは美しさと一貫性なのである．
+
+文章が綺麗で一貫性があることは，シンプルに読みやすさにつながるだろう．
+それだけで他の人が読みたいと思う，かはわからないけど，少なくとも「見た目で読む気が失せる」ということはない．
+文書が美しいことは，人にものを読ませる最低ラインで，だから私は\LaTeX を使うし，使ってほしい．
+
 
 
 

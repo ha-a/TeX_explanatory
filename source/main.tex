@@ -12,12 +12,9 @@
 
 \documentclass[4paper,lualatex,ja=standard,twoside,fleqn]{bxjsarticle}
 % ja=standard により，luatex-ja が不要に
-% \setmainfont[Ligatures=TeX]{Times-New-Roman}
-% \usepackage[no-math,deluxe,expert,hiragino-pron]{luatexja-preset}
-
 
 \input{./engine.tex}
-\usepackage[showdow]{datetime2-en-fulltext}
+
 \usepackage{../preamble}
 \graphicspath{
   {../figures/section1/},
@@ -26,80 +23,27 @@
   {../figures/section4/},
   {../figures/section5/},
 }
-\usepackage{listings}
-\lstset{
-  language={TeX},
-  backgroundcolor={\color[gray]{.9}},
-  basicstyle={\scriptsize\ttfamily},
-  %identifierstyle={\scriptsize},
-  commentstyle={\color[rgb]{0,0.5,0}},
-  keywordstyle={\bfseries \color[rgb]{0,0,0}},
-  %ndkeywordstyle={\scriptsize},
-  stringstyle={\color[rgb]{0,0,0}},
-  frame={tb},
-  breaklines=true,
-  % columns=[l]{fullflexible},
-  columns=fixed,
-  basewidth=0.5em,
-  numbers=left,
-  %xrightmargin=0zw,
-  %xleftmargin=3zw,
-  numberstyle={\scriptsize},
-  stepnumber=1,
-  %numbersep=1zw,
-}
-\lstset{
-  emph={%  
-    stoptext, starttext%
-  },%
-  emphstyle={\color{red}}%
-}%
-
-\usepackage{luacode}
-
-\usepackage[%
-  backend=biber,%
-  bibencoding=utf8%
-  style=numeric-comp,%
-  % bibstyle=verbose,%
-  backref=true,%
-  % date=year,%
-  urldate=long,%
-  sorting=none,%
-]{biblatex}
-\DeclareFieldFormat*{title}{\mkbibquote{#1\adddot}}
-\DeclareCiteCommand{\supercite}[\mkbibsuperscript]
-  {\iffieldundef{prenote}
-     {}
-     {\BibliographyWarning{Ignoring prenote argument}}%
-   \iffieldundef{postnote}
-     {}
-     {\BibliographyWarning{Ignoring postnote argument}}}
-  {\usebibmacro{citeindex}%
-   \bibopenbracket\usebibmacro{cite}\bibclosebracket}
-  {\supercitedelim}
-  {}
-\addbibresource{../ref.bib}
 
 \renewcommand{\baselinestretch}{1.05}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \usepackage{tipa}
 \usepackage{bxtexlogo}
-% \bxtexlogoimport{*,**}
+\usepackage{textgreek}
+
 
 \title{てふてふ}
-% \entitle{}
 \department{
   \textrm{Systems and Control Laboratory,} 
   \textsc{Department of Aeronautics and Astronautics,} \\
   \textsf{Graduate School of Engineering,}
   \textbf{Kyoto University}
 }
-% \id{}
 \author{
   H.A.\thanks{
     GitHub: \url{https://github.com/ha-a}
 }}
+
+\usepackage[showdow]{datetime2-en-fulltext}
 \DTMnewdatestyle{mydateformat}{%
   \renewcommand{\DTMdisplaydate}[4]{%
     \DTMweekdayname{##4},\space% short weekday,
@@ -110,13 +54,9 @@
   \renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
 }
 \date{\ibm{\DTMsetdatestyle{mydateformat}\today}}
-% \date{\ordinalnum{25}}
-% \conference{}
-% \usepackage[colorgrid,gridcolor=cyan,subgridcolor=yellow,gridunit=pt,texcoord]{eso-pic}
-\usepackage{layout}
-\urlstyle{tt}
-\usepackage{ascmac}
-\usepackage[perpage]{footmisc}
+
+% \usepackage{layout}
+
 
 
 \begin{document}
@@ -137,18 +77,17 @@
   \restoregeometry
   \fancyhfoffset{0pt}
 
-
   \noindent
   \subfile{./section1}
   \subfile{./section2}
   \subfile{./section3}
   \subfile{./section4}
   \subfile{./section5}
+  \subfile{./section6}
 
   \phantomsection
   \addcontentsline{toc}{section}{\refname}
   \extramarks{}{\refname}
-  %\bibliographystyle{plainnat}
   \printbibliography[title=\refname]
 
   \cleardoublepage
@@ -156,7 +95,6 @@
   \subfile{./appendix1}
 
   \pagebreak
-  %\newgeometry{left=1cm,right=1cm,top=3cm,bottom=3cm}
 
   \listoffigures
   \listoftables

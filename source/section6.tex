@@ -1,0 +1,34 @@
+% +++
+% sequence = ["latex", "biber", "latex"]
+% [programs.latex]
+% 	command = "lualatex"
+% 	opts = ["-synctex=1", "-file-line-error", "-interaction=nonstopmode"]
+% 	args = ["%S"]
+% [programs.biber]
+% 	command = "biber"
+% 	target = "../ref.bib"
+% 	args = ["--bblencoding=utf8", "-u", "-U", "--output_safechars", "%B"]
+% +++
+
+\documentclass[./main]{subfiles}
+\graphicspath{{\subfix{./figures/section6/}}}
+\setcounter{section}{5}
+\begin{document}
+
+\section{おわりに}
+\noindent
+\TeX と\LaTeX の違いから始まり，その他の\TeX と名のつくものについて整理してきた．
+さらに\verb|tex|ファイルから\verb|pdf|ファイルを作るまでの処理の流れも概説した．
+確かに，文章を書いてるだけなのに（Microsoft Wordと違って），よくエラーが出る．
+しかしそこで苦手意識を持って諦めてほしくない．
+少しでも\TeX やらその周辺の仕組み・大枠を知ることで，よくわからん謎のエラーに対して，そのエラーがとりあえずどこらへんの絡まりが原因なのかを推測できるようになっているはずである．
+私の個人的な願いとしては，せっかく\TeX を使うなら，満足できる美しさを目指してぜひとも色々カスタマイズして自分好みになるようにしていってほしい．
+
+そんなこれからの楽しい\TeX ライフの一助となれば幸いです．
+
+\ifSubfilesClassLoaded{%
+  \printbibliography
+}{}
+
+
+\end{document}

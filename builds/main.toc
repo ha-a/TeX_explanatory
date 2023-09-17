@@ -26,7 +26,9 @@
 \contentsline {subsubsection}{\numberline {(1)}単位}{17}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {(2)}環境に依存する長さ}{17}{subsubsection.5.2.2}%
 \contentsline {subsubsection}{\numberline {(3)}空白}{18}{subsubsection.5.2.3}%
-\contentsline {section}{References}{18}{section*.13}%
+\contentsline {section}{\numberline {6}おわりに}{19}{section.6}%
+\contentsline {section}{References}{19}{section*.13}%
 \setcounter {tocdepth}{2}
-\contentsline {section}{付録}{23}{section*.14}%
+\contentsline {section}{Appendices}{23}{section*.14}%
 \contentsline {subsection}{\numberline {A}はじめてのらてふかんきょうづくり}{23}{subsection.Alph0.1}%
+\contentsline {subsection}{\numberline {B}なぜ\LaTeX なのか}{25}{subsection.Alph0.2}%

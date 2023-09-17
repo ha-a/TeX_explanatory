@@ -114,7 +114,7 @@
 \renewcommand{\figurename}{Fig.~}
 \renewcommand{\tablename}{Table~}
 \renewcommand{\refname}{References}
-\renewcommand{\appendixname}{付録}
+\renewcommand{\appendixname}{Appendices}
 
 \renewcommand{\thesection}{\arabic{section}}
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
@@ -127,21 +127,21 @@
 
 \titleformat{\section} % command
   [hang]               % shape
-  {\secE\secJ\LARGE}    % format
+  {\secE\secJ\LARGE}   % format
   {\thesection.}       % label
   {0.5em}              % sep
   {}                   % before-code
  
 \titleformat{\subsection} % command
   [hang]                  % shape
-  {\secE\secJ\Large}       % format
+  {\secE\secJ\Large}      % format
   {\thesubsection.}       % label
   {0.5em}                 % sep
   {}                      % before-code
 
 \titleformat{\subsubsection} % command
   [hang]                     % shape
-  {\secJ\bfseries\large}          % format
+  {\secJ\bfseries\large}     % format
   {\thesubsubsection}        % label
   {0.5em}                    % sep
   {}                         % before-code
@@ -151,7 +151,7 @@
 % TABLE OF CONTENTS %
 %%%%%%%%%%%%%%%%%%%%%
 
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 
 \usepackage{tocloft}
 % \renewcommand{\cftdot}{$\ast$}
@@ -189,7 +189,7 @@
 \cftpagenumbersoff{table}
 \renewcommand{\cfttabpresnum}{\tablename}   % 表番号の前
 \renewcommand{\cfttabaftersnum}{.}       % 表番号の後
-\renewcommand{\cfttabnumwidth}{4em}   % 表見出しインデント
+\renewcommand{\cfttabnumwidth}{5em}   % 表見出しインデント
 
 \RequirePackage{multicol}
 \setlength{\columnsep}{-10pt}
@@ -280,6 +280,65 @@
 
 \newcommand{\diff}{\mathrm{d}}
 
+%%%%%%%%%%%%%%
+% lstlisting %
+%%%%%%%%%%%%%%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{lightgrey}{rgb}{0.9,0.9,0.9}
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+\definecolor{myblue}{RGB}{20,105,176}
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+\definecolor{myellow}{RGB}{204,142,0}
+
+\definecolor{luakey}{RGB}{184,52,188}
+\definecolor{lualit}{RGB}{73,188,255}
+
+
+\lstdefinelanguage{mytex}[LaTeX]{TeX}{
+  alsoletter={\\,*,\&},
+  morekeywords=[1]{
+    \\begin, \\end, \\\\, \&, \\newcommand, \\documentclass, \\setlength, \\setcounter, \\pagenumbering, \\noindent, \\usepackage, \\pagestyle,
+  },  
+  morekeywords=[2]{ luacode*, \\directlua, tex, sprint, },
+  morekeywords=[3]{
+    function, while, for, do, if, then, else, end, break, in, return, 
+    \\label, \\pageref,
+  },
+  morekeywords=[4]{ local, true, false, nil, },
+  literate=*{\{}{{\textcolor{myellow}{\{}}}{1}
+            {\}}{{\textcolor{myellow}{\}}}}{1}
+            {[}{{\textcolor{myellow}{[}}}{1}
+            {]}{{\textcolor{myellow}{]}}}{1},
+}
+
+\lstdefinestyle{mystyle1}{
+  language         = mytex,
+  backgroundcolor  = \color{lightgrey},
+  frame            = tb,
+  basicstyle       = \scriptsize\ttfamily,
+  keywordstyle     = [1]{\bfseries\color{myblue}},
+  keywordstyle     = [2]{\color{magenta}},
+  keywordstyle     = [3]{\color{luakey}},
+  keywordstyle     = [4]{\color{lualit}},
+  commentstyle     = \color{darkgreen},
+  emphstyle        = \bfseries\color{red},
+  identifierstyle  = \ttfamily,
+  showstringspaces = true,
+  breaklines       = false,
+  numbers          = left,
+  numberstyle      = \scriptsize\ttfamily,
+  stepnumber       = 1,
+  tabsize          = 4,
+  columns          = fullflexibles,
+  keepspaces       = true,
+}
+\lstset{style=mystyle1}
+
+
+
 
 %%%%%%%%%%%%%
 % FUNCTIONS %
@@ -291,11 +350,13 @@
 \usepackage{subfiles}
 
 \usepackage{ascmac} % screen, itembox, shadebox
-\usepackage{color}
 
 \usepackage{enumitem}
 \setlist{listparindent=\parindent}
 
+\usepackage{luacode}
+
+\newcommand{\bhline}[1]{\noalign{\hrule height #1}}
 
 
 %%%%%%%%%%%%%%%%%%
@@ -306,6 +367,8 @@
 \renewcommand{\labelitemi}{$\circ$}
 
 \newcommand{\circtext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}}
+
+\usepackage[perpage]{footmisc}
 
 \newcommand{\capt}[3][\hsize-5em]{%
   \def\@captype{figure}%
@@ -327,6 +390,7 @@
   linkbordercolor={0 0 1},
   hidelinks,
 }
+\urlstyle{tt}
 
 
 %%%%%%%%%%%%%%%%
@@ -338,7 +402,29 @@
 \renewcommand{\refname}{参考文献}
 % \bibliographystyle{unsrtnat}
 
+\usepackage[%
+  backend=biber,%
+  bibencoding=utf8%
+  style=numeric-comp,%
+  % bibstyle=verbose,%
+  backref=true,%
+  % date=year,%
+  urldate=long,%
+  sorting=none,%
+]{biblatex}
 
-\newcommand{\bhline}[1]{\noalign{\hrule height #1}}   
+\DeclareFieldFormat*{title}{\mkbibquote{#1\adddot}}
+\DeclareCiteCommand{\supercite}[\mkbibsuperscript]
+  {\iffieldundef{prenote}
+     {}
+     {\BibliographyWarning{Ignoring prenote argument}}%
+   \iffieldundef{postnote}
+     {}
+     {\BibliographyWarning{Ignoring postnote argument}}}
+  {\usebibmacro{citeindex}%
+   \bibopenbracket\usebibmacro{cite}\bibclosebracket}
+  {\supercitedelim}
+  {}
+\addbibresource{../ref.bib}
 
 

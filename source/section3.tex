@@ -127,7 +127,7 @@
 \begin{figure}[h]
 \centering
 \begin{tabular}{c} 
-\begin{lstlisting}[linewidth=0.6\linewidth]
+\begin{lstlisting}[linewidth=0.7\linewidth]
 \documentclass{article}
 \pagenumbering{roman}
 \setlength{\textwidth}{5em}
@@ -140,7 +140,7 @@
 \end{tabular}
 \end{figure}
 \noindent
-この\TeX 文書は，$999$ページ始まりで，横$5$文字強，縦$2$行の本文スペースに文章を書き連ねている．
+この文書は，$999$ページ始まりで，横$5$文字強，縦$2$行の本文スペースに文章を書き連ねている．
 \verb|\label|は``is''の場所を示し，そのページ数を\verb|\pageref|でローマ数字で表記している．
 実際にコンパイルすると，
 \begin{enumerate}
@@ -155,17 +155,17 @@
   ということで以下ii.とiii.繰り返し．
 \end{enumerate}
 
-この\TeX 文書をコンパイルした結果（のうち最初のページ，つまり$999$ページ）を\figref{fig:loop}に示す．
+この\verb|tex|ファイルをコンパイルした結果（のうち最初のページ，つまり$999$ページ）を\figref{fig:loop}に示す．
 $n\in\mathbb{Z}_{+}$回コンパイルしたあとの出力において，ラベルが付けられる``is''のページ番号とそれを参照しているはずの\verb|\pageref{foo}|の出力は必ず一致しない．
 このおもちゃに面白い以上の意味は見いだせないが，相互参照のために\verb|aux|ファイルが必要で，同様に複数回のコンパイルが必要なこともわかるであろう．
 \begin{figure}[htbp]
   \centering
   \hfill
-  \includegraphics[width=0.25\linewidth,page=1]{../builds/standalone1.pdf}
+  \includegraphics[width=0.25\linewidth,page=1]{inf_compile_1.pdf}
   \hfill
-  \includegraphics[width=0.25\linewidth,page=1]{../builds/standalone_even.pdf}
+  \includegraphics[width=0.25\linewidth,page=1]{inf_compile_even.pdf}
   \hfill
-  \includegraphics[width=0.25\linewidth,page=1]{../builds/standalone_odd.pdf}
+  \includegraphics[width=0.25\linewidth,page=1]{inf_compile_odd.pdf}
   \hfill
   \caption{The example of not converging cross-referencing. 
   Left: former page (page $999$) of first compilation results. 

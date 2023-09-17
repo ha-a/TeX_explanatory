@@ -34,7 +34,7 @@
 
 \subsection{\TeX とはなにか}
 \noindent
-\TeX とは1978年に Donald E. Knuth\supercite{KnuthHP} が発表した``組版\footnote{原稿及びレイアウトの指定に従って，文字・図版・写真などを配置する作業の総称\supercite{Typesetting_Wikipedia}．}ソフトウェアと組版言語''である\supercite{reutenauer2008brief}．
+\TeX とは1978年に Donald E. Knuth\supercite{KnuthHP} が発表した``組版\footnote{原稿及びレイアウトの指定に従って，文字・図版・写真などを配置する作業の総称\supercite{Typesetting_Wikipedia}．}ソフトウェアと組版言語''である\supercite{reutenauer2008brief}\footnote{由来はギリシャ語で美術や工芸を意味する``\texttau\'{\textepsilon}\textchi\textnu\texteta''\textipa{/t\'{e}xni/}}．
 つまり，``文章そのもの''と``文章の構造を指定する命令''が書かれたテキストファイル（この命令を記す言語も\TeX という）を読み込み，その命令に従って文章を組版するソフトウェアが\TeX である．
 組版結果はDVI形式 (DeVice-Independent) に書き出されるが，この\verb|dvi|ファイルは文書の見た目のレイアウト（紙面のどの位置にどの文字を配置する，などの情報）を画像形式・表示デバイス・プリンタにまったく依存しない形で記録している\supercite{TeXdiff_wtsnjp}．
 結局\TeX をとてもざっくりまとめると（Knuthの思う）美しい組版がデバイスによらない形式で出力される，ということになろう．
@@ -83,7 +83,8 @@
   したがって好きなフォントを使うためにはそのための\verb|tfm|ファイルを用意する必要があったのだが，\XeTeX ではその必要はなく，インストールさえしてしまえば好きなフォントが使える．
   \item \LuaTeX : \pdfTeX の後継．
   OpenTypeフォント，Unicodeに対応しているほか，Luaという軽量スクリプト言語を利用できる．
-  このLuaの利用によりあらゆるものがカスタマイズ可能となり，究極の柔軟性が得られる\supercite{八登2010日本人}．(to-do) Luaを使ったおもちゃをいくつかとフォントの切り替えの楽さの確認．
+  このLuaの利用によりあらゆるものがカスタマイズ可能となり，究極の柔軟性が得られる\supercite{八登2010日本人}．
+  % (to-do) Luaを使ったおもちゃをいくつかとフォントの切り替えの楽さの確認．
 \end{itemize}
 \begin{figure}[btph]
   \centering
@@ -184,11 +185,12 @@
 
 
 \subsection{番外編：文書クラス}
+\noindent
 さて，\TeX と名のつくものについて説明してきたが，ここで\TeX を名前に含まないものの，種類がいくつかあってややこしいものとして，文書クラスについて解説する\supercite{documentclass_list}．
 \verb|tex|ファイルの一番最初に\verb|\documentclass|とか書くあれである．
 \begin{itemize}
   \item \verb|article|: 論文やレポートなどの一般的な文書．
-  文章の構造は\verb|part|, \verb|section|, \verb|subsection|, \verb|subsubsection|, \verb|paragraph|, \verb|subparagraph|の7つのレベルに分けられる．
+  文章の構造は\verb|part|, \verb|section|, \verb|subsection|, \verb|subsubsection|, \verb|paragraph|, \verb|subparagraph|の6つのレベルに分けられる．
   \item \verb|report|: 論文やレポートのより長い文書．
   構造としては\verb|article|に\verb|chapter|が追加される（\verb|part|と\verb|section|の間）．
   また，（デフォルトの設定では）\verb|part|が$1$ページ使って表示される（Part I 〇〇とだけ書かれたページができる）．
@@ -198,7 +200,7 @@
   \item \verb|jreport|
   \item \verb|jbook|
   \item \verb|tarticle|: 和文縦書き対応の\verb|article|．
-  \item jsclasses (\verb|jsarticle| etc.): 日本語(u)\pLaTeX 用の新しい文書クラス\supercite{jscls_doc}．JISフォントメトリックを使用している．簡単に言えば「文字の組み方」が綺麗に，読みやすくなる．例えば小さい「ちょっとチャックをチェック」のように小さい文字を並べて表示する際\verb|jarticle|などのmin10フォントメトリックでは不自然に詰められ，美しくなかったり読みづらかったりするのがjsclassesでは解消される\supercite{LaTeX_are}．他にも日本語中の英語の組み方などに差が出る．
+  \item jsclasses (\verb|jsarticle| etc.): 日本語(u)\pLaTeX 用の新しい文書クラス\supercite{jscls_doc}．JISフォントメトリックを使用している．簡単に言えば「文字の組み方」が綺麗に，読みやすくなる．例えば「ちょっとチャックをチェック」のように小さい文字を並べて表示する際\verb|jarticle|などのmin10フォントメトリックでは不自然に詰められ，美しくなかったり読みづらかったりするのがjsclassesでは解消される\supercite{LaTeX_are}．他にも日本語中の英語の組み方などに差が出る．
   \item ltjsclasses (\verb|ltjsarticle| etc.): jsclassesを\LuaLaTeX 用に改変したもの．
   \item bxjsclasses (\verb|bxjsarticle| etc.): jsclassesの派生で，(u)\pLaTeX 依存の部分を切り離したもの．つまり，\LuaLaTeX など他のエンジンを用いても綺麗な日本語文書を作成できる．
   \item \verb|jlreq|: 「日本語組版処理の要件」\footnote{
