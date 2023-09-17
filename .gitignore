@@ -2,8 +2,8 @@
 ./builds/*
 builds/*
 */builds/*
-TeX-expl/builds/*
-Beamer-recom/builds/*
+TeX-expl/builds/
+Beamer-recom/builds/
 
 ### Backup files
 *~
