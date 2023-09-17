@@ -1,0 +1,17 @@
+\beamer@sectionintoc {1}{Beamer}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{When}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Where}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Who}{6}{0}{1}
+\beamer@subsectionintoc {1}{4}{What}{7}{0}{1}
+\beamer@subsectionintoc {1}{5}{Why}{8}{0}{1}
+\beamer@subsectionintoc {1}{6}{How}{9}{0}{1}
+\beamer@sectionintoc {2}{Ti\textit {k}Z }{26}{0}{2}
+\beamer@subsectionintoc {2}{1}{What}{27}{0}{2}
+\beamer@subsectionintoc {2}{2}{Why}{28}{0}{2}
+\beamer@subsectionintoc {2}{3}{Application}{29}{0}{2}
+\beamer@sectionintoc {3}{standalone}{34}{0}{3}
+\beamer@subsectionintoc {3}{1}{What}{35}{0}{3}
+\beamer@subsectionintoc {3}{2}{How}{36}{0}{3}
+\beamer@sectionintoc {4}{まとめ}{37}{0}{4}
+\beamer@sectionintoc {6}{もう少し真面目にHow Beamer?}{43}{1}{5}
+\beamer@sectionintoc {7}{付録B}{47}{1}{6}

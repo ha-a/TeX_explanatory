@@ -1,0 +1,89 @@
+\documentclass[unicode,14pt,aspectratio=169]{beamer}% 'unicode'が必要
+% font size can be 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, or 20pt
+% aspect ratio can be 4:3, 14:9, or 16:9
+
+
+\newif\ifSidebar
+\Sidebartrue
+
+\newif\ifTOCatbegin
+\TOCatbegintrue
+
+
+
+\usepackage{../preamble}
+
+\setbeamersize{text margin left=7mm,text margin right=7mm}
+
+\usepackage{subfiles}
+
+\newenvironment{slide}{\begin{frame}[fragile,allowframebreaks,environment=slide]}{\end{frame}}
+\newenvironment{slides}{\begin{frame}[fragile,environment=slides]}{\end{frame}}
+
+\usepackage{lcg}
+% \usepackage[useregional]{datetime2}
+\usepackage[datesep=/]{datetime2}
+
+\usepackage{tikz-3dplot}
+\usetikzlibrary{arrows, arrows.meta}
+\usetikzlibrary{decorations.pathreplacing}
+
+\newcommand{\TikZ}{Ti\textit{k}Z }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Specifically for these slides %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\graphicspath{{../figures/}}
+\usetikzlibrary{shapes,arrows,positioning,chains}
+
+\setbeamercovered{transparent=30}
+
+\title[Beamerのすゝめ]{Beamerのすゝめ}
+\subtitle{\TikZ を添えて}
+\author{H. Asakura}
+\institute{(GitHub: \url{https://github.com/ha-a})}
+\date{\today}
+
+
+
+%%%%%%%%%%%
+%  DEBUG  %
+%%%%%%%%%%%
+
+\definecolor{cyan}{cmyk}{1,0,0,0}%
+% \usepackage[colorgrid,gridcolor=cyan,subgridcolor=yellow,gridunit=pt,texcoord]{eso-pic}
+
+
+
+
+
+
+\begin{document}
+
+
+\begin{frame}[noframenumbering]
+  \titlepage
+\end{frame}
+
+\phantomsection
+% \section*{ToC}
+\begin{frame}{Table of Contents}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\subfile{./section1}
+\subfile{./section2}
+\subfile{./section3}
+
+\section*{References}
+\begin{frame}[t,allowframebreaks,noframenumbering]{\refname}
+  \bibliography{../ref}
+\end{frame}
+
+\beginbackup
+\subfile{./appendix}
+\backupend
+
+\end{document}

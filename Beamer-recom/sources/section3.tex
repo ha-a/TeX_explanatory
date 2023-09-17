@@ -1,0 +1,132 @@
+\documentclass[./main]{subfiles}
+
+% \graphicspath{{\subfix{../figures/section2/}}}
+
+\begin{document}
+
+\setcounter{section}{2}
+\section{standalone}
+
+\subsection{What}
+\begin{frame}[fragile]
+  \frametitle{\subsecname\ \secname ?}
+
+  \TikZ で図を作ると，
+  \begin{itemize}
+    \item \TeX ファイルが肥大化しがち
+    \item 図だけ確認したいのに文書全体コンパイルは無駄
+  \end{itemize}
+
+  $\to$そんなときは\alert{standalone}
+  \begin{itemize}
+    \item サブファイルを独立にコンパイルできる
+    \item 余白を切り取り，mainファイルに貼り付けられる
+    \item プリアンブルの共有も可能
+  \end{itemize}
+
+\end{frame}
+
+\subsection{How}
+\begin{frame}[fragile]
+  \frametitle{\subsecname\ \secname ?}
+
+  \begin{minipage}[t]{0.45\linewidth}
+    \centering
+    \verb|main.tex|
+    \begin{beamercolorbox}[wd=\linewidth, rounded=true]{grey box}
+      \vspace{-15pt}
+      {\small
+        \begin{verbatim}
+\usepackage{standalone}
+\begin{document}
+...
+\includestandalone{stal}
+standalone example
+\end{document}
+        \end{verbatim}
+      }%
+      \vspace{-20pt}
+    \end{beamercolorbox}%
+    \begin{screen}
+      \centering
+      \vspace{-10pt}
+      \includestandalone[width=0.9\linewidth]{stal}
+      {\small standalone example}
+      \vspace{-5pt}
+    \end{screen}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.5\linewidth}
+    \centering
+    \verb|stal.tex|
+    \begin{beamercolorbox}[wd=\linewidth, rounded=true]{grey box}
+      \vspace{-15pt}
+      {\small
+        \begin{verbatim}
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+  \draw (-1,0)circle(2pt);
+  \draw[->] (-2,0)--(2,0);
+  \node[above] at(2,0){$x$};
+\end{tikzpicture}
+\end{document}
+        \end{verbatim}
+      }%
+      \vspace{-20pt}
+    \end{beamercolorbox}%
+    \small{
+      \verb|lualatex stal.tex|でstandaloneのみコンパイル
+    }
+  \end{minipage}
+  \vfilll
+\end{frame}
+
+\section{まとめ}
+\begin{frame}
+  \frametitle{\secname}
+
+  \centering
+
+  \begin{textblock*}{0.6\linewidth}(.17\pagewidth,.3\pageheight)
+    \begin{itemize}
+      \item Beamerは便利
+      \begin{itemize}
+        \item 綺麗で嬉しい
+        \item すこし楽しい
+        \item 使いこなせるととても楽しい
+      \end{itemize}
+    \end{itemize}
+  \end{textblock*}
+  \begin{textblock*}{0.6\linewidth}(.4\pagewidth,.62\pageheight)
+    \begin{itemize}
+      \item \TikZ は便利
+      \begin{itemize}
+        \item 綺麗で嬉しい
+        \item すこし楽しい
+        \item 使いこなせるととても楽しい
+      \end{itemize}
+    \end{itemize}
+  \end{textblock*}
+  \begin{textblock*}{0.6\linewidth}(.5\pagewidth,.15\pageheight)
+    \begin{itemize}
+      \item standaloneは便利
+      \begin{itemize}
+        \item 綺麗で嬉しい
+        \item すこし楽しい
+        \item 使いこなせるととても楽しい
+      \end{itemize}
+    \end{itemize}
+  \end{textblock*}
+
+\end{frame}
+
+\ifSubfilesClassLoaded{%
+  \begin{frame}
+    \bibliography{../ref}
+  \end{frame}
+}{}
+
+
+\end{document}

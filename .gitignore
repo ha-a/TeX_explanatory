@@ -1,7 +1,9 @@
 # Project Specific rules here
 ./builds/*
 builds/*
-
+*/builds/*
+TeX-expl/builds/*
+Beamer-recom/builds/*
 
 ### Backup files
 *~

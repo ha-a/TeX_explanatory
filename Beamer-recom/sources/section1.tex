@@ -1,0 +1,289 @@
+\documentclass[./main]{subfiles}
+
+% \graphicspath{{\subfix{../figures/section1/}}}
+% \setbeameroption{show notes on second screen=right}
+
+\begin{document}
+
+\setcounter{section}{0}
+\section{Beamer}
+\subsection{When}
+\begin{frame}
+  \frametitle{\subsecname\ \secname ?}
+
+  \centering
+  スライドが作りたいとき
+
+  \vspace{1ex}
+
+  When you want to make slides
+
+\end{frame}
+
+
+\subsection{Where}
+\begin{frame}
+  \frametitle{\subsecname\ \secname ?}
+
+  \centering
+
+  \LaTeX があればどこでも
+
+  \vspace{1ex}
+
+  Anywhere with \LaTeX
+
+\end{frame}
+
+
+\subsection{Who}
+\begin{frame}
+  \frametitle{\subsecname\ \secname ?}
+
+  \centering
+
+  誰でも
+
+  \vspace{1ex}
+
+  Anyone who wants
+
+\end{frame}
+
+
+\subsection{What}
+\begin{frame}[fragile]
+  \frametitle{\subsecname\ \secname ?}
+
+  \centering
+
+  ドイツ語で「投影機」
+
+  \vspace{1ex}
+
+  \LaTeX に基づき，プレゼンテーションを\\
+  作成するためのクラスである\citep{WikiBeamerJa}
+
+  \vspace{1ex}
+
+  A LaTeX document class \\
+  for creating presentation slides \citep{WikiBeamerEn}
+
+
+\end{frame}
+
+
+\subsection{Why}
+\begin{frame}[fragile]
+  \frametitle{\subsecname\ \secname ?}
+
+  \begin{itemize}
+    \item \LaTeX コマンドが使える
+    \begin{itemize}
+      \item 数式がきれい
+      \item 全体の構造/階層の理解
+    \end{itemize}
+    \item スライドの統一性の向上
+    \begin{itemize}
+      \item 実用的な \verb|theme| が豊富に用意されている
+      \item 全体のレイアウト・色・フォントも一括で変更可
+      \item OverlayとDynamic効果
+    \end{itemize}
+    \item 講義ノート$\leftrightarrow$プレゼン資料の変換可
+    \item pdf出力$\Rightarrow$表示のデバイスやバージョン依存なし
+  \end{itemize}
+
+\end{frame}
+
+
+\subsection{How}
+\begin{slide}
+  \frametitle{\subsecname\ \secname ?}
+
+  \vfilll
+
+  \begin{itemize}
+    \item Lua\LaTeX \footnotemark
+  \end{itemize}
+
+  \centering
+  \begin{minipage}[t]{0.4\linewidth}
+    \small{
+      \begin{verbatim}
+\documentclass{beamer}
+
+\begin{document}
+    \begin{frame}
+        Hello, \LaTeX!
+    \end{frame}
+\end{document}
+      \end{verbatim}
+    }
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.55\linewidth}
+    \small{
+      \begin{verbatim}
+\documentclass[unicode]{beamer}
+\usepackage{luatexja}
+\begin{document}
+    \begin{frame}
+        こんにちは，\LaTeX！
+    \end{frame}
+\end{document}
+      \end{verbatim}
+    }
+  \end{minipage}
+  
+  \vfilll
+  \vfilll
+
+  {\scriptsize
+    \hfill\footnotemark[1]{Lua\LaTeX って何？な方は別紙「てふてふ」参照．}
+  }
+
+  \framebreak
+
+  \begin{itemize}
+    \item どうしてもup\LaTeX
+  \end{itemize}
+
+  \centering
+  \begin{verbatim}
+      \documentclass[dvipdfmx]{beamer}
+      \usepackage{bxdpx-beamer}
+      \begin{document}
+          \begin{frame}
+              こんにちは，\LaTeX！
+          \end{frame}
+      \end{document}
+  \end{verbatim}
+
+\end{slide}
+
+
+
+
+
+\begin{frame}[fragile]
+  \frametitle{\subsecname\ \secname $\bm{+\alpha}$}
+
+  \centering
+
+  \begin{minipage}{0.3\linewidth}
+    {\small 
+      \begin{block}<1->{block}
+        ABCDEFG
+      \end{block}
+      \begin{alertblock}<2>{alert block}
+        いろはにほへと
+      \end{alertblock}
+      \begin{exampleblock}<3->{example block}
+        あいうえお
+      \end{exampleblock}
+    }
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.6\linewidth}
+    \begin{beamercolorbox}[wd=\linewidth, rounded=true]{grey box}
+      {\small
+        \begin{verbatim}
+\begin{block}<1->{block}
+  ABCDEFG
+\end{block}
+\begin{alertblock}<2>{alert}
+  いろはにほへと
+\end{alertblock}
+\begin{exampleblock}<3->{example}
+  あいうえお
+\end{exampleblock}
+        \end{verbatim}%
+      }%
+      \vspace{-15pt}
+    \end{beamercolorbox}
+  \end{minipage}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{\subsecname\ \secname $\bm{+\alpha}$}
+
+  Overlay: \uncover<2->{uncover} \only<3->{only} \visible<4->{visible} \invisible<5->{invisible} \alt<6->{\alert{alt}}{alt} \temporal<3-4>{before}{temporal}{after}
+
+  {\small
+    \begin{verbatim}
+\uncover<2->{uncover} \only<3->{only} 
+\visible<4->{visible} \invisible<5->{invisible} 
+\alt<6->{\alert{alt}}{alt} 
+\temporal<3-4>{before}{temporal}{after}
+    \end{verbatim}
+  }
+
+  \begin{table}[htbp]
+    \pause
+    \centering\begin{tabular}{ll}\bhline{1pt}
+      \verb|\uncover| $=$ \verb|\onslide| & 半透明（Dynamic効果） \pause\\
+      \verb|\only| $=$ \verb|\onslide*| & 存在しなくなる \pause\\
+      \verb|\visible| $=$ \verb|\onslide+| & 空白になる \\ \bhline{1pt}
+    \end{tabular}
+  \end{table}
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+  \frametitle{\subsecname\ \secname $\bm{+\alpha}$}
+
+
+  \centering
+
+  \begin{minipage}{0.35\linewidth}
+    \begin{enumerate}[<+-|alert@+>]
+      \item foo
+      \item bar
+      \begin{enumerate}
+        \item baz
+        \item qux
+          \begin{enumerate}
+          \item quxx
+          \end{enumerate}
+        \end{enumerate}
+      \item corge
+    \end{enumerate}  
+  \end{minipage}
+  \begin{minipage}{0.6\linewidth}
+    \begin{beamercolorbox}[wd=\linewidth, rounded=true]{grey box}
+      {\small
+        \begin{verbatim}
+\begin{enumerate}[<+-|alert@+>]
+  \item foo
+  \item bar
+  \begin{enumerate}
+    \item baz
+    \item qux
+      \begin{enumerate}
+      \item quxx
+      \end{enumerate}
+    \end{enumerate}
+  \item corge
+\end{enumerate}  
+        \end{verbatim}
+      }%
+      \vspace{-15pt}
+    \end{beamercolorbox}%
+  \end{minipage}
+  
+\end{frame}
+
+
+
+\ifSubfilesClassLoaded{%
+  \begin{frame}
+    \bibliography{../ref}
+  \end{frame}
+}{}
+
+
+\end{document}

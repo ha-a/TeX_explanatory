@@ -1,0 +1,70 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+
+
+\begin{document}
+
+\newcommand{\defect}[2]{
+	\pgfmathsetmacro{\k}{#1}
+	\pgfmathsetmacro{\c}{#2}
+	\draw (0,-8.3)node{$(#1,#2)$}; %ラベル
+	
+	\filldraw (0,0) circle(0.3);
+	
+	\foreach \x in {-6,-4,-2,0,2,4,6}
+	\foreach \y in {-6,-4,-2,0,2,4,6}{
+		\pgfmathparse{not(equal(\x,0))}
+		\ifnum\pgfmathresult=1
+			\pgfmathparse{\x>0}
+			\ifnum\pgfmathresult=1
+				\pgfmathsetmacro{\p}{atan(\y/\x)}
+			\else
+				\pgfmathsetmacro{\p}{atan(\y/\x)+180}
+			\fi
+			\pgfmathsetmacro{\t}{\k*\p+\c}
+			\draw[very thick] (\x,\y) +(\t:-0.9) -- +(\t:0.9);
+		\else
+			\pgfmathparse{not(equal(\y,0))}
+			\ifnum\pgfmathresult=1
+				\pgfmathparse{\y>0}
+				\ifnum\pgfmathresult=1
+					\pgfmathsetmacro{\p}{90}
+				\else
+					\pgfmathsetmacro{\p}{270}
+        \fi
+        \pgfmathsetmacro{\t}{\k*\p+\c}
+        \draw[very thick] (\x,\y) +(\t:-0.9) -- +(\t:0.9);
+		  \fi
+	  \fi
+  }
+}
+
+
+\begin{tikzpicture}[scale=0.25]
+  \pgfmathsetmacro{\xshift}{450} %どれだけx方向にずらすか
+  \pgfmathsetmacro{\yshift}{-500} %どれだけy方向にずらすか
+  \pgfmathsetmacro{\X}{0}
+  \pgfmathsetmacro{\Y}{0}
+  
+  \foreach \k/\c[remember=\X, remember=\Y] in %k,cを動かす
+  {1/0, 1/30, 1/60, 1/90,
+  -1/0, -1/30, -1/60, -1/90,
+  {1/2}/0, {-1/2}/0, 2/0, -2/0,
+  {3/2}/0, {-3/2}/0, 3/0, -3/0}{
+    \begin{scope}[xshift=\xshift*\X, yshift=\yshift*\Y]
+      \defect{\k}{\c} %描画
+    \end{scope}
+    
+    \pgfmathparse{not(equal(\X,3))}
+    \ifnum \pgfmathresult=1 %X!=3
+      \pgfmathsetmacro{\X}{\X+1} %Xを1増やす
+    \else %X=3
+      \pgfmathsetmacro{\X}{0} %X=0にリセット
+      \pgfmathsetmacro{\Y}{\Y+1} %Yを1増やす
+    \fi
+  }
+\end{tikzpicture}
+
+
+\end{document}

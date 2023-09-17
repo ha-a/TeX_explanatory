@@ -1,0 +1,71 @@
+\newcommand{\drawNN}[5][1]{
+  \begin{tikzpicture}[scale=#1]
+
+
+  \newcommand{\numhh}{#2}
+  \newcommand{\numi}{#3}
+  \newcommand{\numh}{#4}
+  \newcommand{\numo}{#5}
+
+  \newcommand{\dist}{1.5}
+  
+  \draw [decorate,decoration={brace,amplitude=10},xshift=0pt,yshift=0pt](\dist-\dist/2,\numh/2+0.5) -- (\dist*\numhh+\dist/2,\numh/2+0.5) node [above right of=1,black,midway,xshift=-0.6cm]{hidden layer(s)};
+  \draw [decorate,decoration={brace,amplitude=10},xshift=0pt,yshift=0pt](-0.2,-\numi/2-0.5) -- (-0.2,\numi/2+0.5) node [left=0,black,midway,xshift=-0.6cm,align=right]{input\\layer};
+  \draw [decorate,decoration={brace,mirror,amplitude=10},xshift=0pt,yshift=0pt](\dist*\numhh+\dist*1.2,-\numo/2) -- (\dist*\numhh+\dist*1.2,\numo/2) node [right=1cm,black,midway,xshift=-0.6cm,align=left]{output\\layer};
+
+  \tikzstyle{input}=[draw,fill=red!50,circle,minimum size=10pt,inner sep=0pt]
+  \tikzstyle{hidden}=[draw,fill=green!50,circle,minimum size=10pt,inner sep=0pt]
+  \tikzstyle{output}=[draw,fill=blue!50,circle,minimum size=10pt,inner sep=0pt]
+  \tikzstyle{bias}=[draw,fill=gray!50,circle,minimum size=10pt,inner sep=0pt]
+  \tikzstyle{arrow}=[arrows={{Latex[scale=0.5]}-}, thick]  % , in=90, out=-90
+
+
+  \pgfmathsetmacro{\y}{(\numi)/2}
+  \node (n00)[bias] at (0,\y) {};
+  \foreach \i in {1, ..., \numi}{
+    \pgfmathsetmacro{\y}{-(\numi+2)/2+\i}
+    \node (n0\i)[input] at (0,\y) {};
+  }
+
+
+  \foreach \j in {1, ..., \numhh}{
+    \pgfmathsetmacro{\x}{\dist*\j}
+    \pgfmathsetmacro{\y}{(\numh)/2}
+    \node (n\j0)[bias] at (\x,\y) {};
+
+    \foreach \i in {1, ..., \numh}{
+      \pgfmathsetmacro{\y}{-(\numh+2)/2+\i}
+      \node (n\j\i)[hidden] at (\x,\y) {};
+    }
+  }
+
+  \pgfmathsetmacro{\j}{\numhh+1}
+  \pgfmathsetmacro{\x}{\dist*\j}
+  \foreach \i in {1, ..., \numo}{
+    \pgfmathsetmacro{\y}{-(\numo+1)/2+\i}
+    \node (no\i)[output] at (\x,\y) {};
+  }
+
+  \foreach \j in {1, ..., \numhh}{
+    \pgfmathsetmacro{\jj}{int(\j-1)}
+    \foreach \i in {1, ..., \numh}{
+      \ifnum\j=1
+        \foreach \k in {0, ..., \numi}{
+          \draw (n\j\i) edge[arrow] (n0\k);
+        }
+      \else
+        \foreach \k in {0, ..., \numh}{
+          \draw (n\j\i) edge[arrow] (n\jj\k);
+        }
+      \fi
+    }
+  }
+
+  \pgfmathsetmacro{\j}{\numhh}
+  \foreach \i in {1, ..., \numo}{
+    \foreach \k in {0, ..., \numh}{
+      \draw (no\i) edge[arrow] (n\j\k);
+    }
+  }
+\end{tikzpicture}
+}
