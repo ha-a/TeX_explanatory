@@ -46,14 +46,14 @@
   \item Mac
   \begin{enumerate}
     \item Homebrewをダウンロード．\\
-    \vspace{-10pt}
+    \vspace{-16pt}
     \begin{verbatim}
 /bin/bash -c "$(curl -fsSL 
           https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     \end{verbatim}
     \vspace{-10pt}
     \item MacTeXをインストール．のち，待ち．\\
-    \vspace{-10pt}
+    \vspace{-16pt}
     \begin{verbatim}
 brew install --cask mactex-no-gui
 sudo tlmgr update --self --all
@@ -79,7 +79,6 @@ sudo tlmgr paper a4
     \begin{verbatim}
 latex main.tex
 dvipdfmx main.dvi
-open main.pdf
     \end{verbatim}
   \end{minipage}
   \item \LuaLaTeX も確認．
@@ -93,11 +92,46 @@ open main.pdf
 \end{document}      
 \end{lstlisting}
   \end{minipage}
+  \item \upBibTeX も確認．
+  \quad
+  \begin{minipage}[t]{0.55\linewidth}
+    \verb|main_lua_bib.tex|\quad
+    \begin{lstlisting}[numbers=none,linewidth=\linewidth]
+\documentclass[a4paper,lualatex,ja=standard]{bxjsarticle}
+\bibliographystyle{unsrt}
+\begin{document}
+  Hello, \LaTeX! こんにちは，\LaTeX! \cite{ref_item}
+  \bibliography{ref}
+\end{document}      
+\end{lstlisting}
+  \end{minipage}
+  と\quad
+  \begin{minipage}[t]{0.2\linewidth}
+    \verb|ref.bib|\quad
+    \begin{lstlisting}[numbers=none,linewidth=\linewidth]
+@article{ref_item,
+  title={Title},
+  author={Author},
+  journal={Journal},
+  year={2000},
+}
+\end{lstlisting}
+  \end{minipage}
+  を作って，コンパイル：
+  \quad
+  \begin{minipage}[t]{0.4\linewidth}
+    \begin{verbatim}
+lualatex main_lua_bib.tex
+upbibtex main_lua_bib.aux
+lualatex main_lua_bib.tex
+lualatex main_lua_bib.tex
+    \end{verbatim}
+  \end{minipage}
   \item \verb|latexmk|を使うための設定ファイル\verb|latexmkrc|を作成．\LuaLaTeX なら以下．\\
   \begin{figure}[h]
   \centering
   \begin{minipage}{0.65\linewidth}
-  \begin{lstlisting}[commentstyle={\color[rgb]{0,0,0}},]
+  \begin{lstlisting}[numbers=none,commentstyle={\color[rgb]{0,0,0}},]
 #!/usr/bin/env perl
 $latex     = 'uplatex  %O -synctex=1 -file-line-error -halt-on-error %S';
 $pdflatex  = 'pdflatex %O -synctex=1 -file-line-error -halt-on-error %S';
@@ -110,23 +144,15 @@ $pdf_mode  = 4; # or 3 (for upLaTeX)
 \end{lstlisting}
 \end{minipage}
 \end{figure}
-  \upLaTeX なら9行目の\verb|pdf_mode|を$3$にする．
+  \upLaTeX なら最終行の\verb|pdf_mode|を$3$にする．
   \item もっかい確認．\verb|latexmk main.tex|でコンパイル．\verb|main.tex|には相互参照や文献参照を追加してもいい．\verb|pdf_mode|には注意．
   \item Visual Studio Codeをインストール．
   \item VSCodeで拡張機能LaTeX Workshopをインストール．
   \item VSCodeでコマンドパレットから\verb|settings.json|を開き，以下を追加する：
   \begin{figure}[h]
     \centering
-    \begin{minipage}{0.3\linewidth}
-    \begin{lstlisting}[commentstyle={\color[rgb]{0,0,0}},]
-"latex-workshop.latex.recipes": [
-  {
-      "name": "latexmk",
-      "tools": [
-          "latexmk_tool"
-      ]
-  },
-],
+    \begin{minipage}{0.55\linewidth}
+    \begin{lstlisting}[numbers=none,commentstyle={\color[rgb]{0,0,0}},]
 "latex-workshop.latex.tools": [
   {
       "name": "latexmk_tool",
@@ -137,6 +163,15 @@ $pdf_mode  = 4; # or 3 (for upLaTeX)
       ],
   },
 ],
+"latex-workshop.latex.recipes": [
+  {
+      "name": "latexmk",
+      "tools": [
+          "latexmk_tool"
+      ]
+  },
+],
+"latex-workshop.latex.option.maxPrintLine.enabled": false,
 \end{lstlisting}
   \end{minipage}
   \end{figure}
@@ -144,8 +179,6 @@ $pdf_mode  = 4; # or 3 (for upLaTeX)
 \end{enumerate}
 
 これでとりあえず\upLaTeX でも\LuaLaTeX でもその他のなにかでもローカル環境で動く！はず（\verb|latexmkrc|は文書に合わせて適宜変える必要あり）．
-
-
 ここから先はすべて個人の好みである．例えば
 \begin{itemize}
   \item VSCodeの設定ファイル\verb|settings.json|の\verb|recipes|と\verb|tools|は好きなように組合せて作れるため，
